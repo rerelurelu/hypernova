@@ -32,6 +32,11 @@ export default () => {
         <div className={style.backgroundDiv}>
           <ul className={style.nav}>
             <li className={style.navItem}>
+              <a href="https://aspected-helios.herokuapp.com/enif/" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                Home
+              </a>
+            </li>
+            <li className={style.navItem}>
               <Link to="/" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 About
               </Link>

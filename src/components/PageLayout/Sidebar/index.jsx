@@ -24,7 +24,7 @@ const DomContent = () => (
           <span>Zaw</span>
         </h2>
       </div>
-      <div className={`${style.badge} ${style.badgeGray}`}>Software Engineer</div>
+      <div className={`${style.badge} ${style.badgeGray}`}>Job hunting</div>
       <div className="centerAlign box">
         <a href={github} target="_blank" label="button" rel="noopener noreferrer"><FA name="github" /></a>
       </div>
