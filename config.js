@@ -1,7 +1,5 @@
-const dotenv = require('dotenv');
-
-dotenv.config({
-  path: `.env.${process.env.NODE_ENV}`,
+require('dotenv').config({
+path: `env..${process.env.NODE_ENV}`,
 });
 
 module.exports = {
@@ -68,6 +66,5 @@ module.exports = {
       description: 'A general purpose programming language that is widely used for developing various applications.',
       color: '#f9c646',
     },
-
   },
 };
