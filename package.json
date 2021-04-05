@@ -1,7 +1,7 @@
 {
-  "name": "rolwinreevan_gatsby_blog",
+  "name": "zaw-site",
   "private": true,
-  "description": "the most beautiful gatsby template ever designed using antd",
+  "description": "Zaw's web site",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -49,6 +49,6 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/rolwin100/rolwinreevan_gatsby_blog"
+    "url": "https://github.com/zoniha"
   }
 }
