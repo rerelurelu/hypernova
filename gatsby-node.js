@@ -20,7 +20,7 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-    }    
+    }
   `).then((result) => {
     if (result.errors) return Promise.reject(result.errors);
 
@@ -70,3 +70,11 @@ exports.createPages = ({ actions, graphql }) => {
     return 1;
   });
 };
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: 'empty'
+    }
+  })
+}
