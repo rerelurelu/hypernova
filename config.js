@@ -23,7 +23,7 @@ module.exports = {
   googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '',
   tags: {
     javascript: {
-      name: 'javascript',
+      name: 'Javascript',
       color: '#F7DF1E',
     },
     nodejs: {
@@ -31,11 +31,11 @@ module.exports = {
       color: '#339933',
     },
     typescript: {
-      name: 'typescript',
+      name: 'Typescript',
       color: '#3178C6',
     },
     reactjs: {
-      name: 'reactjs',
+      name: 'Reactjs',
       color: '#61DAFB',
     },
     gatsby: {
@@ -47,16 +47,16 @@ module.exports = {
       color: '#E34F26',
     },
     css: {
-      name: 'css',
+      name: 'CSS',
       color: '#1572B6',
     },
     python: {
-      name: 'python',
+      name: 'Python',
       color: '#3776AB',
     },
-    Work: {
+    work: {
       name: 'Work',
       color: '#812990',
-    }
+    },
   },
 };
