@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 h1{
     font-size: 1.875rem;
 	margin-bottom: 1.2rem;
-	
+
 	@media only screen and (max-width: 767px) {
 	  font-size: 1.7rem;
 	}
@@ -21,7 +21,7 @@ h1{
 h2 {
     font-size: 1.562rem;
 	margin-bottom: 1.4rem;
-	
+
 	@media only screen and (max-width: 767px) {
 	  font-size: 1.5rem;
 	  margin-bottom: 1.2rem;
@@ -30,17 +30,17 @@ h2 {
 h3 {
     font-size: 1.125rem;
 	margin-bottom: .85rem;
-	
+
 	@media only screen and (max-width: 767px) {
 	  font-size: 1.1rem;
 	  margin-bottom: 1rem;
-	}  
-	
+	}
+
   }
 h4 {
     font-size: 1.1rem;
 	margin-bottom: .8rem;
-	
+
 	@media only screen and (max-width: 767px) {
 	  font-size: 1rem;
 	}
@@ -55,8 +55,9 @@ ul{
     &::before,
     &::after {
       content: '';
-      background-color: #09c7fb;
-      background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+      background: #12c2e9;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(215deg, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(215deg, #f64f59, #c471ed, #12c2e9);
       border-radius: .5rem;
       height: 5px;
       position: absolute;
@@ -100,7 +101,7 @@ ul{
 .ant-progress-success-bg, .ant-progress-bg {
   background-color: #96c8fb;
   background-image: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
-} 
+}
 
 .outerPadding {
   padding: 1.87rem;
@@ -108,11 +109,11 @@ ul{
     padding: 0.6rem;
   }
 }
-.container { 
+.container {
   max-width: 1264px;
   width:100%;
   margin-left: auto;
-  margin-right: auto 
+  margin-right: auto
 }
 .marginTopTitle{
   @media screen and (max-width: 768px){
@@ -138,7 +139,7 @@ ul{
 }
 
 .ant-layout{
-  background: #12c2e9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(215deg, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #12c2e9;
+  background: -webkit-linear-gradient(215deg, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(215deg, #f64f59, #c471ed, #12c2e9);
 }
