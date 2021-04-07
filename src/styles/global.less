@@ -1,5 +1,6 @@
 @import (reference) './mixins.less';
 body{
+  font-family: 'Overpass', sans-serif;
   font-size: 15px;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -54,18 +55,15 @@ ul{
     &::before,
     &::after {
       content: '';
-	  background-color: #304CFD;
-	  border-radius: .5rem;
-	  height: 5px;
-	  position: absolute;
-	  bottom: -1.1rem;
-	  left: 0;
-	  width: 3.12rem;
-	  z-index: 1;
-    }
-    &::after {
-        background-color: #FF965D;
-        width: 1rem;
+      background-color: #09c7fb;
+      background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+      border-radius: .5rem;
+      height: 5px;
+      position: absolute;
+      bottom: -1.1rem;
+      left: 0;
+      width: 3.12rem;
+      z-index: 1;
       }
 }
 .centerAlign{
@@ -98,6 +96,11 @@ ul{
   vertical-align: middle;
   word-break: normal;
 }
+
+.ant-progress-success-bg, .ant-progress-bg {
+  background-color: #96c8fb;
+  background-image: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
+} 
 
 .outerPadding {
   padding: 1.87rem;
@@ -132,4 +135,10 @@ ul{
 }
 .react-pdf__Document{
   background: lightslategray;
+}
+
+.ant-layout{
+  background: #12c2e9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(215deg, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

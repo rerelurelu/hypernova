@@ -4,7 +4,7 @@ import ProgressBar from '../../Progress';
 
 const SkillsProgress = () => (
   <div>
-    <h2>My Skills</h2>
+    <h2 className="titleSeparate">My Skills</h2>
     <Row gutter={[20, 20]}>
       <Col xs={24} sm={24} md={12}>
         <ProgressBar
