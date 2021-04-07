@@ -5,6 +5,8 @@ import {
 } from 'antd';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import '@fontsource/overpass'
+
 import Header from '../../components/PageLayout/Header';
 import SEO from '../../components/Seo';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
