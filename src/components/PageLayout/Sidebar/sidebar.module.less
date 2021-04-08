@@ -15,10 +15,11 @@
 
         .profileAvatar{
             background-image: url('../../../images/avatar.png');
-            height: 260px;
+            height: 168px;
+            width: 168px;
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: bottom;
+            background-position: center;
             border-radius:  @border-radius-full;
             @media screen and (max-width:767px){
                 max-width: 230px;
@@ -110,11 +111,13 @@
 }
 
 .background{
-    .whiteBg()
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 0 0.9375rem 2.1875rem rgba(0, 0, 0, .3);
 }
 .boxContent{
     padding: @padding-margin-val;
-    padding-left: 0;
+    margin: 60px 40px;
+    border-radius: 30px;
     @media screen and (max-width: 767px){
         padding: @padding-margin-val;
         padding-top: 0;

@@ -10,8 +10,8 @@ import PostCard from '../../components/PostCard';
 import SEO from '../../components/Seo';
 
 const Blog = ({ data }) => (
-  <Layout className="outerPadding">
-    <Layout className="container">
+  <Layout className="outerPadding background">
+    <Layout className="container glass-1">
       <Header />
       <SEO
         title="Blog"

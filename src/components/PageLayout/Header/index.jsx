@@ -28,9 +28,9 @@ export default () => {
           <div className={style.hamburgerText}>MENU</div>
         </div>
       </div>
-      <Layout className={`${style.navWrap} ${menu ? null : style.hidden} ${menu ? style.openMenu : null}`}>
+      <Layout className={`${style.navWrap} ${menu ? null : style.hidden} ${menu ? style.openMenu : null} glass-1`}>
         <div className={style.backgroundDiv}>
-          <ul className={style.nav}>
+          <ul className={`${style.nav} glass`}>
             <li className={style.navItem}>
               <a href="https://aspected-helios.herokuapp.com/enif/" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 Home

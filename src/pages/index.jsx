@@ -8,8 +8,8 @@ import AboutMe from '../components/PageFragments/HomePage/AboutMe';
 import Skills from '../components/PageFragments/HomePage/SkillProgress';
 
 export default () => (
-  <Layout className="outerPadding">
-    <Layout className="container">
+  <Layout className="outerPadding background">
+    <Layout className="container glass-1">
       <Header />
       <SidebarWrapper>
         <>

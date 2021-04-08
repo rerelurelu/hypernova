@@ -20,8 +20,8 @@ export const query = graphql`
 `;
 
 export default ({ data }) => (
-  <Layout className="outerPadding">
-    <Layout className="container">
+  <Layout className="outerPadding background">
+    <Layout className="container glass-1">
       <Header />
       <Sidebar404>
         <>

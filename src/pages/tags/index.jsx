@@ -24,8 +24,8 @@ const Tags = ({ data }) => {
   // const tagPage = Config.pages.tag;
   const tagData = Config.tags;
   return (
-    <Layout className="outerPadding">
-      <Layout className="container">
+    <Layout className="outerPadding background">
+      <Layout className="container glass-1">
         <Header />
         <SEO
           title="Tags"

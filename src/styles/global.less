@@ -4,11 +4,14 @@ body{
   font-size: 15px;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #44566C;
+    color: #67b7b2;
     font-weight: 600;
     line-height: 1.3;
     margin-top: 0;
     margin-bottom: 0.5em;
+}
+p {
+  color: #8babab;
 }
 h1{
     font-size: 1.875rem;
@@ -55,9 +58,8 @@ ul{
     &::before,
     &::after {
       content: '';
-      background: #12c2e9;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(215deg, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(215deg, #f64f59, #c471ed, #12c2e9);
+      background-color: #50d8d7;
+      background-image: linear-gradient(135deg, #50d8d7 0%, #923993 74%);
       border-radius: .5rem;
       height: 5px;
       position: absolute;
@@ -89,7 +91,7 @@ ul{
   margin-left: -40px;
   margin-top: 6px;
   position: absolute;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(255, 255, 255, 0.6) !important;
   font-size: 12px;
   line-height: 1;
   white-space: nowrap;
@@ -99,8 +101,13 @@ ul{
 }
 
 .ant-progress-success-bg, .ant-progress-bg {
-  background-color: #96c8fb;
+  background-color: #96c8fb !important;
   background-image: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
+}
+.ant-progress-inner{
+  border: 1px solid rgba(0, 0, 0, .1) !important;
+  padding: 2px !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .outerPadding {
@@ -138,8 +145,17 @@ ul{
   background: lightslategray;
 }
 
-.ant-layout{
+.background{
   background: #12c2e9;
   background: -webkit-linear-gradient(215deg, #f64f59, #c471ed, #12c2e9);
   background: linear-gradient(215deg, #f64f59, #c471ed, #12c2e9);
+}
+
+.ant-layout{
+  background-color: transparent;
+}
+
+.glass{
+  background-color: rgba(0, 0, 0, .1);
+  box-shadow: inset 0 0.9375rem 2.1875rem rgba(0, 0, 0, .1);
 }
