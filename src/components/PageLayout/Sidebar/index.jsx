@@ -26,7 +26,9 @@ const DomContent = () => (
       </div>
       <div className={`${style.badge} ${style.badgeGray}`}>Job hunting</div>
       <div className="centerAlign box">
-        <a href={github} target="_blank" label="button" rel="noopener noreferrer"><FA name="github" /></a>
+        <a href={github} target="_blank" label="button" rel="noopener noreferrer">
+          <FA name="github" className={style.sideBarIcon} />
+        </a>
       </div>
       <ul className={`box ${style.badge} contactBlock`}>
         <li className={`${style.contactBlockItem}`}>

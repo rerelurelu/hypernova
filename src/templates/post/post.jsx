@@ -17,13 +17,13 @@ const Post = ({ data }) => {
   } = frontmatter;
 
   return (
-    <Layout className="outerPadding">
-      <Layout className="container">
+    <Layout className="outerPadding background">
+      <Layout className="container glass-1">
         <SEO
           title={title}
           description={excerpt}
           path={path}
-          keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
+          keywords={['FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
         />
         <Header />
         <SidebarWrapper>

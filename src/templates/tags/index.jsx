@@ -24,8 +24,8 @@ const TagPage = ({ data, pageContext }) => {
     .childImageSharp.fluid;
   const posts = data.allMarkdownRemark.edges;
   return (
-    <Layout className="outerPadding">
-      <Layout className="container">
+    <Layout className="outerPadding background">
+      <Layout className="container glass-1">
         <Header />
         <SEO
           title={tagName}

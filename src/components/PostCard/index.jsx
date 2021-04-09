@@ -22,10 +22,8 @@ const PostCard = (props) => {
           </p>
           <h3>{frontmatter ? frontmatter.title : ''}</h3>
           <p>{frontmatter ? frontmatter.excerpt : ''}</p>
-          <p style={{ color: '#ce6d96', wordSpacing: '10px' }}>
-            {
-                `#${frontmatter.tags.join(' #')}`
-            }
+          <p style={{ color: 'rgba(255, 121, 198, .5)', wordSpacing: '10px' }}>
+            {`#${frontmatter.tags.join(' #')}`}
           </p>
         </div>
       </Link>
