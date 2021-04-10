@@ -30,20 +30,22 @@ const DomContent = () => (
           <FA name="github" className={style.sideBarIcon} />
         </a>
       </div>
-      <ul className={`box ${style.badge} contactBlock`}>
-        <li className={`${style.contactBlockItem}`}>
-          <span>
-            <FeatherIcon size="19" icon="calendar" />
+      <div className="personalInfo">
+        <ul className={`box ${style.badge} contactBlock`}>
+          <li className={`${style.contactBlockItem}`}>
+            <span>
+              <FeatherIcon size="19" icon="calendar" />
+              {' '}
+            </span>
+          &nbsp; &nbsp; September 29
+          </li>
+          <li className={`${style.contactBlockItem}`}>
+            <span><FeatherIcon size="19" icon="map-pin" /></span>
             {' '}
-          </span>
-&nbsp; &nbsp; September 29
-        </li>
-        <li className={`${style.contactBlockItem}`}>
-          <span><FeatherIcon size="19" icon="map-pin" /></span>
-          {' '}
-&nbsp; &nbsp; Nagano, Japan
-        </li>
-      </ul>
+          &nbsp; &nbsp; Nagano, Japan
+          </li>
+        </ul>
+      </div>
     </div>
   </aside>
 );
