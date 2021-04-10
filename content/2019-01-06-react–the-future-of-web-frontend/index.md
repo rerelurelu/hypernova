@@ -1,34 +1,34 @@
 ---
-title: React – The Future Of Web Frontend
+title: Adipiscing malesuada. Commodo platea mus, blandit purus nulla. Eu hac.
 tags: [reactjs, javascript, typescript, html, css, work ]
 date: 2019-01-07T05:25:44.226Z
 path: blog/react–the-future-of-web-frontend
 cover: ./preview.png
-excerpt: Working with ReactJS - A library by facebook was a great experience for me. React has made building web apps easy by making use of reusable components. This is clearly my viewpoint about the library. 
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl ipsum, laoreet at aliquet id, auctor ac metus. Aliquam et blandit dui, eget euismod felis. Aliquam fringilla hendrerit neque, non pellentesque orci feugiat id. Cras id eros purus. Mauris aliquam finibus mauris ac dictum. Vestibulum elit massa, luctus nec pulvinar ut, tincidunt eu sem. Donec eu elementum libero, bibendum aliquet ipsum. Fusce arcu dui, dignissim vitae gravida eu, gravida sed dolor.
 ---
 
-Hello guys! In this article, I would love to talk about my experience working with React.js a frontend open source library developed at Facebook. I have been working with react over a couple of months and for my amazement, it’s a fantastic library. In this post, I would like to discuss some of the advantages and a few disadvantages of using React.
+Nulla ornare laoreet arcu, nec tristique nunc congue sed. Morbi finibus ullamcorper efficitur. Aliquam dictum ante in leo porta fermentum. Vivamus pulvinar mauris ac commodo congue. Nunc quis magna ligula. Donec consequat arcu eget risus porta semper. Sed ac magna felis. Etiam nec euismod leo. Aenean nec porta lectus, quis finibus leo.
 
-I have worked with other frontend frameworks like angularJS and angular 2, 4 & 5. Even though Angular gives us some out of box features than React and the learning curve of Angular is more simple when compared to React, React has some awesome benefits over Angular.
+Curabitur eget justo ipsum. Maecenas eu velit auctor, scelerisque ligula ut, viverra quam. Proin sed vulputate dolor. Quisque faucibus mi ac nibh porta mollis. Nulla risus lorem, interdum sed mi nec, tempor fermentum eros. Pellentesque suscipit nisi quis tellus tempor, at consequat elit convallis. Curabitur convallis ultricies finibus. Donec ut porta velit. Vivamus dictum nisi id maximus pulvinar.
 
 ##The following are some of the awesome benefits of React.
 
-1. ### React is a library not a framework
+1. ### Integer sit amet hendrerit nibh
 
-    Yes, React is a library, not a framework! This makes React more lighter than Angular. This is a major advantage as well as a slightly minor disadvantage. The advantage is that you get the flexibility to use React in the way you want. You can use React with other frameworks like Angular or Vue.js. There are also many state management libraries like Redux and MobX that can be used with React. But for beginners, this becomes a bit difficult because you may end up messing the code without providing a proper file structure to your project, also you need to add other additional libraries like react-router which react does not provide by default.
+    Nullam nunc lorem, tincidunt ultricies lectus vitae, ultricies mattis magna. Aenean vitae neque porta, dapibus turpis nec, dictum nulla. Phasellus in urna sed odio varius euismod. Nulla nulla dolor, ullamcorper ac sapien laoreet, semper tincidunt risus. Nullam non elementum orci. Ut at leo sit amet elit pellentesque pharetra. Donec vulputate mauris congue mauris interdum aliquam. Pellentesque sed quam viverra, tempus dolor non, luctus mi. Donec mattis bibendum sollicitudin. Vestibulum risus sapien, semper at scelerisque in, eleifend ut erat. Cras nec nibh vitae nisi bibendum venenatis. Etiam quis magna mattis, tincidunt arcu in, blandit est. Sed ullamcorper commodo leo vitae rhoncus. Fusce suscipit in massa id aliquam.
 
 2. ### React is the View of MVC
 
     When React was designed the Facebook community designed it in such a way that they provided us only the view. Hence while using React we do the processing and displaying both in the same file. We use JSX syntax to write HTML code. This makes development a bit fast. But also some developers find it weird to write code in JSX and also JSX syntax is a bit different from the normal way of writing HTML code. Suppose we want to provide a flux architecture to React we can use a state management library like Redux or MobX, Which provides a flux architecture to the application.
 
-3. ### React makes use of the Virtual DOM
+3. ### Donec varius risus in ipsum finibus
 
-    React doesn’t manipulate the actual DOM. It manipulates the virtual DOM. That is the javascript representation of the actual DOM in memory. Hence when we change the state only that particular value updates in the DOM without affecting the rest of the DOM that has not changed. This makes React faster.
+    et tempor est ultrices. Nam vitae ipsum commodo arcu cursus elementum. Ut varius justo urna, quis pretium mauris viverra vel. Duis rhoncus tempor mollis. Nam pellentesque porttitor metus quis condimentum. Vivamus tincidunt semper est, vitae hendrerit ex aliquam ac. Fusce accumsan aliquet tortor vel feugiat. Duis pulvinar erat ut diam posuere tincidunt. Suspendisse sed dapibus ipsum, vel scelerisque nibh. Nulla aliquam varius urna vitae dignissim.
 
-4. ### React components are reusable
+4. ### Lorem ipsum dolor sit amet
 
-    In react we make use of components and these components can be reused in other projects once developed. It is very easy to build components in React and make them loosely coupled so that they can be used anywhere.
+    consectetur adipiscing elit. Donec scelerisque, urna sit amet suscipit sollicitudin, neque dui elementum velit, ut pharetra dolor ipsum vel mauris. Pellentesque turpis velit, hendrerit dapibus enim eget, dictum vestibulum turpis. Curabitur sagittis nisl id velit dapibus fringilla eu scelerisque lacus. Praesent ante nulla, volutpat sed orci in, euismod feugiat libero. Curabitur arcu tellus, posuere sed velit eu, suscipit interdum diam. Aenean vitae vulputate nisl. Morbi lacinia, tortor ac lacinia consectetur, mi lacus interdum est, et imperdiet dui felis sed sem. Nunc gravida mollis leo, a sollicitudin libero pellentesque interdum. Pellentesque dui sapien, euismod sed tempor hendrerit, condimentum vel arcu. Mauris vel mi aliquet, aliquam dui sit amet, sollicitudin ante. In hac habitasse platea dictumst. Nulla ut commodo nulla, sed mollis mi. Proin eleifend nisi sit amet turpis molestie, a rutrum arcu molestie.
 
-5. ### React has great community support
+5. ### Aenean vitae vulputate nisl
 
-    The community support behind react is very good. It is also maintained by Facebook as an open source project with regular updates. Currently, version 16.6 is the updated version as of Jan 3rd, 2019.
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam vitae condimentum elit.

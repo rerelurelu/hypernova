@@ -28,12 +28,12 @@ When you create a Django application with the command `django-admin startproject
 ## The files specification is explained well in the Django docs.
 
 1. The outer directory `mysite/` is the outer container to your project. Your are free to name it whatever you like.
-2. `manage.py` is a utility that contains few command that lets you interact with the Django server. You can read all the details about `manage.py` in [django-admin and manage.py](https://docs.djangoproject.com/en/2.1/ref/django-admin/).
+2. `manage.py` is a utility that contains few command that lets you interact with the Django server. You can read all the details about `manage.py` in [django-admin and manage.py](https://docs.djangoproject.com/en/3.1/ref/django-admin/).
 3. The inner `mysite/` is the actual python package for your project.
 4. `mysite/__init__.py` is the file that is used to initial all the function of the package. It tells the Python that the directory should be used as a package. This feature allows us to make a package out of a the current application and can be used in other systems. You can read [more about packages](https://docs.python.org/3/tutorial/modules.html#tut-packages) in the official Python docs.
-5. `mysite/settings.py` consists all the settings for the Django application. [Django settings](https://docs.djangoproject.com/en/2.1/topics/settings/) will tell you all about how settings work.
-6. `mysite/urls.py:` The URL declarations is a list that contains the url of the application linked to the controller  that performs some operations and renders the required data to the view. You can read more about URLs in [URL dispatcher](https://docs.djangoproject.com/en/2.1/topics/http/urls/).
-7. `mysite/wsgi.py:` This file is the entry point for various web servers that are WSGI-compatible. See [How to deploy with WSGI](https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/) for more details.
+5. `mysite/settings.py` consists all the settings for the Django application. [Django settings](https://docs.djangoproject.com/en/3.1/topics/settings/) will tell you all about how settings work.
+6. `mysite/urls.py:` The URL declarations is a list that contains the url of the application linked to the controller  that performs some operations and renders the required data to the view. You can read more about URLs in [URL dispatcher](https://docs.djangoproject.com/en/3.1/topics/http/urls/).
+7. `mysite/wsgi.py:` This file is the entry point for various web servers that are WSGI-compatible. See [How to deploy with WSGI](https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/) for more details.
 
 Now create an app inside the Django app with the help of the command `python manage.py startapp myapp` this will create a app inside the Django application. Every Django application will consist of atlas one app. This application can be attached and detached from the system at any point of time and can be sued as a plugin for another application. Hence the apps created with Django behaves as a microservice that can be used for a specific purpose.
 
@@ -42,7 +42,7 @@ Now create an app inside the Django app with the help of the command `python man
 ## The created app folder structure is as follows.
 
 1. `myapp/models.py` is the Model, or where you define your database.
-2. `myapp/views.py` is the controller. You may wonder why the controller is called view. Django [docs](https://docs.djangoproject.com/en/1.11/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names) has a very good explanation for this.
+2. `myapp/views.py` is the controller. You may wonder why the controller is called view. Django [docs](https://docs.djangoproject.com/en/3.1/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names) has a very good explanation for this.
 3. Everything under `myapp/templates/myapp/` are HTML files that define the view. Suppose you want to display the data from the controller you can pass objects such as a list.
 4. `urls.py` will contain the list of urls for the app.
 
