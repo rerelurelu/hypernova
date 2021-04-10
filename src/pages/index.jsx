@@ -9,7 +9,7 @@ import Skills from '../components/PageFragments/HomePage/SkillProgress';
 
 export default () => (
   <Layout className="outerPadding background">
-    <Layout className="container glass-1">
+    <Layout className="container">
       <Header />
       <SidebarWrapper>
         <>

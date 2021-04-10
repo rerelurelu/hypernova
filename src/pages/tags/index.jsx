@@ -25,7 +25,7 @@ const Tags = ({ data }) => {
   const tagData = Config.tags;
   return (
     <Layout className="outerPadding background">
-      <Layout className="container glass-1">
+      <Layout className="container">
         <Header />
         <SEO
           title="Tags"

@@ -21,7 +21,7 @@ export const query = graphql`
 
 export default ({ data }) => (
   <Layout className="outerPadding background">
-    <Layout className="container glass-1">
+    <Layout className="container">
       <Header />
       <Sidebar404>
         <>

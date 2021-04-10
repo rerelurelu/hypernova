@@ -11,7 +11,7 @@ import SEO from '../../components/Seo';
 
 const Blog = ({ data }) => (
   <Layout className="outerPadding background">
-    <Layout className="container glass-1">
+    <Layout className="container">
       <Header />
       <SEO
         title="Blog"

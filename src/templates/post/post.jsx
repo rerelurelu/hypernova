@@ -18,7 +18,7 @@ const Post = ({ data }) => {
 
   return (
     <Layout className="outerPadding background">
-      <Layout className="container glass-1">
+      <Layout className="container">
         <SEO
           title={title}
           description={excerpt}

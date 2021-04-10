@@ -25,7 +25,7 @@ const TagPage = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
   return (
     <Layout className="outerPadding background">
-      <Layout className="container glass-1">
+      <Layout className="container">
         <Header />
         <SEO
           title={tagName}
