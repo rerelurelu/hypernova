@@ -28,7 +28,7 @@ export default () => {
           <div className={style.hamburgerText}>MENU</div>
         </div>
       </div>
-      <Layout className={`${style.navWrap} ${menu ? null : style.hidden} ${menu ? style.openMenu : null} glass-1`}>
+      <Layout className={`${style.navWrap} ${menu ? null : style.hidden} ${menu ? style.openMenu : null}`}>
         <div className={style.backgroundDiv}>
           <ul className={`${style.nav} glass`}>
             <li className={style.navItem}>
