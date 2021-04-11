@@ -58,7 +58,7 @@ Djangoを利用して過去に作成した画像認識アプリは入力画像�
 
 その他は以下のStackShareから確認できます。
 
-[StackShare](https://stackshare.io/zaw/zaw-site)
+- [StackShare](https://stackshare.io/zaw/zaw-site)
 
 <br>
 <br>
