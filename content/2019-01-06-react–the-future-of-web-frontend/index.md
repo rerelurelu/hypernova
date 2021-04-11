@@ -1,10 +1,10 @@
 ---
 title: Adipiscing malesuada. Commodo platea mus, blandit purus nulla. Eu hac.
-tags: [reactjs, javascript, typescript, html, css, work ]
+tags: [reactjs, javascript, typescript, html, css]
 date: 2019-01-07T05:25:44.226Z
 path: blog/react–the-future-of-web-frontend
 cover: ./preview.png
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl ipsum, laoreet at aliquet id, auctor ac metus. Aliquam et blandit dui, eget euismod felis. Aliquam fringilla hendrerit neque, non pellentesque orci feugiat id. Cras id eros purus. Mauris aliquam finibus mauris ac dictum. Vestibulum elit massa, luctus nec pulvinar ut, tincidunt eu sem. Donec eu elementum libero, bibendum aliquet ipsum. Fusce arcu dui, dignissim vitae gravida eu, gravida sed dolor.
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl ipsum, laoreet at aliquet id, auctor ac metus. Aliquam et blandit dui, eget euismod felis. Aliquam fringilla hendrerit neque, non pellentesque orci feugiat id.
 ---
 
 Nulla ornare laoreet arcu, nec tristique nunc congue sed. Morbi finibus ullamcorper efficitur. Aliquam dictum ante in leo porta fermentum. Vivamus pulvinar mauris ac commodo congue. Nunc quis magna ligula. Donec consequat arcu eget risus porta semper. Sed ac magna felis. Etiam nec euismod leo. Aenean nec porta lectus, quis finibus leo.
