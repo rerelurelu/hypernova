@@ -1,7 +1,8 @@
 import React from 'react';
 import { Layout } from 'antd';
 import { Link, graphql } from 'gatsby';
-import '@fontsource/overpass'
+import '@fontsource/overpass';
+import '@fontsource/noto-sans-jp';
 
 import Header from '../../components/PageLayout/Header';
 import style from './404.module.less';

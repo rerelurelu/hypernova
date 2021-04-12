@@ -14,6 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@fontsource/noto-sans-jp": "^4.2.2",
     "@fontsource/overpass": "^4.2.2",
     "antd": "^4.0.1",
     "feather-icons-react": "^0.4.1",
