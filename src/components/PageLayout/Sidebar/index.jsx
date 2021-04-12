@@ -10,6 +10,8 @@ import style from './sidebar.module.less';
 import { useWindowSize } from '../../../utils/hooks';
 import Config from '../../../../config';
 
+import Footer from '../Footer'
+
 const { Content } = Layout;
 const {
   github,
@@ -81,6 +83,7 @@ const Sidebar = (props) => {
                 { children }
               </Layout>
             </Col>
+                <Footer />
           </Row>
         </Content>
       </Layout>
