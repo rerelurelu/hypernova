@@ -37,11 +37,33 @@ Djangoを利用して過去に作成した画像認識アプリは入力画像�
 
 ## 使用方法
 
-- ユーザー登録、ログイン
+- ユーザー登録
+
+![signup](https://user-images.githubusercontent.com/43092452/114406275-5e2f3b80-9be2-11eb-80ec-a91c3a096ef0.gif)
+
+- ログイン
+
+![login](https://user-images.githubusercontent.com/43092452/114406265-5cfe0e80-9be2-11eb-8e97-2b00128d188a.gif)
+
 - ToDoの作成
+
+![create](https://user-images.githubusercontent.com/43092452/114406099-38099b80-9be2-11eb-92ff-6a5c5fe79063.gif)
+
 - ToDoの編集
+
+![update](https://user-images.githubusercontent.com/43092452/114406278-5f606880-9be2-11eb-8177-b9cb57c6e60c.gif)
+
+- ToDoの検索
+
+![search](https://user-images.githubusercontent.com/43092452/114406272-5e2f3b80-9be2-11eb-8ff4-bce97fed2297.gif)
+
 - ToDoの削除
+
+![task_delete](https://user-images.githubusercontent.com/43092452/114406277-5ec7d200-9be2-11eb-9ecb-a6f70b91569d.gif)
+
 - ユーザー削除
+
+![delete_user](https://user-images.githubusercontent.com/43092452/114406245-58d1f100-9be2-11eb-9368-f0c4ca5e5c71.gif)
 
 ## 使用技術
 
