@@ -1,5 +1,5 @@
 import React from 'react';
-import { stripTags, domHtml } from '../../../utils/stripTags';
+import { stripTags } from '../../../utils/stripTags';
 
 import SEO from '../../Seo';
 
