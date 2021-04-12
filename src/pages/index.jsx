@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
-import '@fontsource/overpass'
+import '@fontsource/overpass';
 
 import Header from '../components/PageLayout/Header';
 import SidebarWrapper from '../components/PageLayout/Sidebar';
