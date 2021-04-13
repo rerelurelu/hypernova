@@ -18,7 +18,7 @@ const {
 } = Config.social;
 
 const DomContent = () => (
-  <aside>
+  <aside className={style.sidebarItems}>
     <div className={style.profileAvatar} />
     <div className={`${style.name} centerAlign`}>
       <div className={`${style.boxName} centerAlign`}>
