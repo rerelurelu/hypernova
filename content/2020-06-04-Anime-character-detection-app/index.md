@@ -11,12 +11,18 @@ excerpt: 画像認識の技術を利用して入力された画像からアニ�
 
 自作の画像認識モデルを使用し、ユーザーが入力した画像からアニメキャラクターを検出します。
 
+## デモ
+
+![demo](https://user-images.githubusercontent.com/43092452/114491169-198eb900-9c51-11eb-8f7a-d206cc291b8a.gif)
+
 ## 使用技術
 
 - Python: 3.6.9
 - Django: 3.1.3
 - OpenCV: 4.1.2.30
 - TensorFlow: 2.3.0
+
+<br>
 
 その他は以下のStackShareから確認できます。<br>
 - [StackShare](https://stackshare.io/zaw/my-portfolio)
@@ -25,14 +31,12 @@ excerpt: 画像認識の技術を利用して入力された画像からアニ�
 
 - [The source code of dataset creation](https://github.com/zoniha/create-anime-detection-dataset)
 
-<br>
-<br>
 
 ## データセット作成の流れ
 
 1. 動画ファイルからキャラクターの顔画像だけを保存
 2. 得られた顔画像をキャラクター別に分ける（手作業）
-3. 正解ラベルと画像をNumpyファイルに変換（データセット作成完了）
+3. 正解ラベルと画像をNumPyファイルに変換（データセット作成完了）
 4. モデルの構造を定義して学習
 5. モデルの精度に満足したらモデルを保存して完成　　
 
