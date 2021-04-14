@@ -22,39 +22,39 @@ module.exports = {
   tags: {
     javascript: {
       name: 'Javascript',
-      color: '#F7DF1E',
+      color: '#fff',
     },
     nodejs: {
       name: 'Node.js',
-      color: '#339933',
+      color: '#f7f8f0',
     },
     typescript: {
       name: 'Typescript',
-      color: '#3178C6',
+      color: '#f7f8f0',
     },
     reactjs: {
       name: 'Reactjs',
-      color: '#61DAFB',
+      color: '#f7f8f0',
     },
     gatsby: {
       name: 'Gatsby.js',
-      color: '#663399',
+      color: '#f7f8f0',
     },
     html: {
       name: 'HTML',
-      color: '#E34F26',
+      color: '#f7f8f0',
     },
     css: {
       name: 'CSS',
-      color: '#1572B6',
+      color: '#f7f8f0',
     },
     python: {
       name: 'Python',
-      color: '#3776AB',
+      color: '#f7f8f0',
     },
     work: {
       name: 'Work',
-      color: '#812990',
+      color: '#f7f8f0',
     },
   },
 };
