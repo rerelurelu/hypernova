@@ -14,6 +14,7 @@ const PostCard = (props) => {
           className={style.postCardImg}
           style={{
             backgroundImage: `url(${frontmatter ? frontmatter.cover.childImageSharp.fluid.src : ''})`,
+            backgroundPosition: 'center'
           }}
         />
         <div className={style.mrTp20}>
