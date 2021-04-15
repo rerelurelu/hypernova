@@ -114,7 +114,9 @@
 
 .background{
     background-color: rgba(0, 0, 0, .1);
-    //box-shadow: 0 0.9375rem 2.1875rem rgba(0, 0, 0, .3);
+    @media only screen and (max-width: 768px){
+        background-color: transparent;
+    }
 }
 .boxContent{
     padding: @padding-margin-val;
@@ -148,5 +150,6 @@
 
 .childrenContainer{
     background-color: rgba(0, 0, 0, .1) !important;
-    box-shadow: initial;
+    box-shadow: 2px 4px 10px 8px rgba(0, 0, 0, .2);
+    border: solid 1px rgba(255, 255, 255, .1);
 }
