@@ -56,6 +56,11 @@ export default () => {
                 Tags
               </Link>
             </li>
+            <li className={style.navItem}>
+              <Link to="/contact" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       </Layout>
