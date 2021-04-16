@@ -1,7 +1,3 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
 module.exports = {
   pathPrefix: '',
   siteUrl: 'https://aspected-helios.netlify.app/',
@@ -18,7 +14,8 @@ module.exports = {
   social: {
     github: 'https://github.com/zoniha',
   },
-  googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '',
+  contactFormUrl: process.env.CONTACT_FORM_ENDPOINT,
+  googleAnalyticTrackingId: process.env.GA_TRACKING_ID,
   tags: {
     javascript: {
       name: 'Javascript',
