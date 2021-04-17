@@ -35,7 +35,10 @@ export default () => {
   return (
     <>
       <Col sm={24} md={24} lg={12} className="widthFull">
-        <Form form={form} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
+        <Form form={form} name="nest-messages" onFinish={onFinish}
+          validateMessages={validateMessages}
+          className={style.contactForm}
+        >
           <Form.Item name={['name']} rules={[{ required: true }]}>
             <Input size="large" placeholder="Name *" />
           </Form.Item>
@@ -49,7 +52,7 @@ export default () => {
             <Input.TextArea size="large" rows={7} placeholder="Message *" />
           </Form.Item>
           <Form.Item>
-            <Button type="primary" shape="round" size="large" htmlType="submit" style={{ background: '#304CFD' }}>
+            <Button type="primary" shape="round" size="large" htmlType="submit"className={style.sendBtn}>
               SEND
             </Button>
           </Form.Item>
