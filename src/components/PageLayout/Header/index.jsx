@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { Layout } from 'antd';
 import 'font-awesome/less/font-awesome.less';
+
 import style from './header.module.less';
 import '../../../styles/global.less';
 import { useWindowSize } from '../../../utils/hooks';
@@ -21,6 +22,7 @@ export default () => {
   };
   return (
     <>
+      <Scroll showBelow={250} />
       <div className={style.circleMenu} role="button" tabIndex="0" onKeyDown={toggleMenu} onClick={toggleMenu}>
         <div className={`${style.hamburger} ${menu ? style.menuIcon : null}`}>
           <div className={style.line} />
