@@ -5,6 +5,7 @@ import Header from '../../components/PageLayout/Header';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import ContactForm from '../../components/PageFragments/ContactForm';
 import SEO from '../../components/Seo';
+import Scroll from '../../components/Scroll'
 
 const Contact = () => (
   <Layout className="outerPadding background">
@@ -28,6 +29,7 @@ const Contact = () => (
         </Row>
       </SidebarWrapper>
     </Layout>
+    <Scroll showBelow={100} />
   </Layout>
 );
 

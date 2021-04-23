@@ -2,9 +2,11 @@ import React from 'react';
 import { Layout } from 'antd';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+
 import Header from '../../components/PageLayout/Header';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import SEO from '../../components/Seo';
+import Scroll from '../../components/Scroll'
 
 import 'prismjs/themes/prism-solarizedlight.css';
 import './highlight-syntax.less';
@@ -37,6 +39,7 @@ const Post = ({ data }) => {
           </div>
         </SidebarWrapper>
       </Layout>
+      <Scroll showBelow={100} />
     </Layout>
   );
 };

@@ -13,6 +13,7 @@ import SEO from '../../components/Seo';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import TagCard from '../../components/TagCard';
 import Config from '../../../config';
+import Scroll from '../../components/Scroll'
 
 const Tags = ({ data }) => {
   const { allFile: { edges } } = data;
@@ -55,6 +56,7 @@ const Tags = ({ data }) => {
           </>
         </SidebarWrapper>
       </Layout>
+      <Scroll showBelow={100} />
     </Layout>
   );
 };

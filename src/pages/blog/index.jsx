@@ -9,6 +9,7 @@ import Header from '../../components/PageLayout/Header';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import PostCard from '../../components/PostCard';
 import SEO from '../../components/Seo';
+import Scroll from '../../components/Scroll'
 
 const Blog = ({ data }) => (
   <Layout className="outerPadding background">
@@ -37,6 +38,7 @@ const Blog = ({ data }) => (
         </Row>
       </SidebarWrapper>
     </Layout>
+    <Scroll showBelow={100} />
   </Layout>
 );
 
