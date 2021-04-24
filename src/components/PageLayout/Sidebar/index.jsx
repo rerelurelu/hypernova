@@ -2,7 +2,8 @@ import React from 'react';
 import {
   Affix, Layout, Row, Col,
 } from 'antd';
-import FA from 'react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FeatherIcon from 'feather-icons-react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { globalHistory } from '@reach/router';
@@ -29,7 +30,7 @@ const DomContent = () => (
       <div className={`${style.badge} ${style.badgeGray}`}>Job hunting</div>
       <div className="centerAlign box">
         <a href={github} target="_blank" label="button" rel="noopener noreferrer">
-          <FA name="github" className={style.sideBarIcon} />
+          <FontAwesomeIcon icon={faGithub} className={style.sideBarIcon} />
         </a>
       </div>
       <div className="personalInfo">
