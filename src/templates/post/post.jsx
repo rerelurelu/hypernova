@@ -57,7 +57,7 @@ export const pageQuery = graphql`
         excerpt
         cover {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1000, quality: 100) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
@@ -79,7 +79,7 @@ export const pageQuery = graphql`
             excerpt
             cover {
               childImageSharp {
-                fluid(maxWidth: 600) {
+                fluid(maxWidth: 600, quality: 100) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
