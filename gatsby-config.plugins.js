@@ -6,7 +6,6 @@ module.exports = [
   'gatsby-plugin-sharp',
   'gatsby-plugin-less',
   'gatsby-plugin-offline',
-  'gatsby-plugin-smoothscroll',
   {
     resolve: 'gatsby-source-filesystem',
     options: {
