@@ -44,41 +44,41 @@ excerpt: 入力された文章をバビ語に変換できます。
 ---
 以下がバビ語変換のコードになります。
 
-```python
-    def babi_converter(hiragana: str) -> str:
-        result = ''
-        length = len(hiragana) - 1
+```Python
+def babi_converter(hiragana: str) -> str:
+    result = ''
+    length = len(hiragana) - 1
 
-        for idx, letter in enumerate(hiragana):
-            next_letter = hiragana[idx+1:idx+2]
+    for idx, letter in enumerate(hiragana):
+        next_letter = hiragana[idx+1:idx+2]
 
-            if (next_letter in 'ぁぃぅぇぉゃゅょ') & (idx < length):
-                pass
-            elif letter in 'あかがさざただなはばぱまやらわゎ':
-                result += (letter + 'ば')
-            elif letter in 'いきぎしじちぢにひびぴみり':
-                result += (letter + 'び')
-            elif letter in 'うゔくぐすずつづぬふぶぷむゆるん':
-                result += (letter + 'ぶ')
-            elif letter in 'えけげせぜてでねへべぺめれ':
-                result += (letter + 'べ')
-            elif letter in 'おこごそぞとどのほぼぽもよろを':
-                result += (letter + 'ぼ')
-            elif letter in 'ぁゃ':
-                result += (hiragana[idx-1:idx] + letter + 'ば')
-            elif letter in 'ぃ':
-                result += (hiragana[idx-1:idx] + letter + 'び')
-            elif letter in 'ぅゅ':
-                result += (hiragana[idx-1:idx] + letter + 'ぶ')
-            elif letter in 'ぇ':
-                result += (hiragana[idx-1:idx] + letter + 'べ')
-            elif letter in 'ぉょ':
-                result += (hiragana[idx-1:idx] + letter + 'ぼ')
-            elif (letter in 'ー〜') & (idx < length):
-                result += (letter + result[-1])
-            else:
-                result += letter
-        return result
+        if (next_letter in 'ぁぃぅぇぉゃゅょ') & (idx < length):
+            pass
+        elif letter in 'あかがさざただなはばぱまやらわゎ':
+            result += (letter + 'ば')
+        elif letter in 'いきぎしじちぢにひびぴみり':
+            result += (letter + 'び')
+        elif letter in 'うゔくぐすずつづぬふぶぷむゆるん':
+            result += (letter + 'ぶ')
+        elif letter in 'えけげせぜてでねへべぺめれ':
+            result += (letter + 'べ')
+        elif letter in 'おこごそぞとどのほぼぽもよろを':
+            result += (letter + 'ぼ')
+        elif letter in 'ぁゃ':
+            result += (hiragana[idx-1:idx] + letter + 'ば')
+        elif letter in 'ぃ':
+            result += (hiragana[idx-1:idx] + letter + 'び')
+        elif letter in 'ぅゅ':
+            result += (hiragana[idx-1:idx] + letter + 'ぶ')
+        elif letter in 'ぇ':
+            result += (hiragana[idx-1:idx] + letter + 'べ')
+        elif letter in 'ぉょ':
+            result += (hiragana[idx-1:idx] + letter + 'ぼ')
+        elif (letter in 'ー〜') & (idx < length):
+            result += (letter + result[-1])
+        else:
+            result += letter
+    return result
 ```
 
 平仮名化された文章を受け取り、そこから一文字ずつ取り出し、前後の文字との関係を見ながら愚直にバビブベボを挿入しています。`elif`がたくさんで見にくいですが、やっていることはとてもシンプルです。

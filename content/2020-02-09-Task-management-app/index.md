@@ -8,7 +8,7 @@ excerpt: Djangoを利用してToDoリストを作成しました。
 ---
 
 ## 概要
-
+---
 DjangoでToDoリストを作成しました。
 具体的な機能は以下のとおりです。
 
@@ -32,11 +32,11 @@ DjangoでToDoリストを作成しました。
 - [The source code of the User Registration and Login](https://github.com/zoniha/helios/tree/main/accounts)
 
 ## 作成した目的
-
+---
 Djangoを利用して過去に作成した画像認識アプリは入力画像をサーバー側で加工し、その画像を表示させるというものだったので、CRUD機能を利用したモノを作成することでDjangoについての理解を深めることが目的です。
 
 ## 使用方法
-
+---
 - ユーザー登録
 
 ![signup](https://user-images.githubusercontent.com/43092452/114406275-5e2f3b80-9be2-11eb-80ec-a91c3a096ef0.gif)
@@ -66,7 +66,7 @@ Djangoを利用して過去に作成した画像認識アプリは入力画像�
 ![delete_user](https://user-images.githubusercontent.com/43092452/114406245-58d1f100-9be2-11eb-9368-f0c4ca5e5c71.gif)
 
 ## 使用技術
-
+---
 - Python: 3.9.0
 - Django: 3.1.5
 
@@ -77,7 +77,7 @@ Djangoを利用して過去に作成した画像認識アプリは入力画像�
 - [StackShare](https://stackshare.io/zaw/zaw-site)
 
 ## 作成に関して
-
+---
 CRUD機能の実装に関してはDjangoのクラスベース汎用ビューを使用すれば良いのでDjangoのドキュメントを参考にしながら簡単に実装することができました。
 
 問題となったのは、ユーザー登録に独自のバリデーションを加えたためエラーメッセージをまとめて扱うことができず、HTMLで出力した際にレイアウトが崩れてしまうことでしたが、Sign upフォームにあらかじめバリデーション内容の説明を記述しておくことでバリデーションエラーが発生した際に「Invalid　○○」と表示するだけで済むようにして解決しました。
