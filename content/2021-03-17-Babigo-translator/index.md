@@ -11,7 +11,7 @@ excerpt: 入力された文章をバビ語に変換できます。
 ---
 ユーザーから入力された日本語文章をgooラボのひらがな化APIによってひらがな文章化し、それをバビ語に変換します。もともとはターミナル上でPythonファイルを実行して遊ぶだけのものだったのですが、せっかくなのでDjangoを使ってバビ語変換サイトを作成しました。
 
-[実際のサイトはこちらから](https://aspected-helios.herokuapp.com/peacock/babilang/)
+[Visit the site](https://aspected-helios.herokuapp.com/peacock/babigo/)
 
 ## 使用技術
 ---
@@ -38,7 +38,7 @@ excerpt: 入力された文章をバビ語に変換できます。
 ### 結局どっち？
 正直なところ、ひらがな化APIとPykakasiの性能差はほぼないです。ひらがな化の精度の特徴をまとめると、どちらも普通の文章なら問題なく平仮名化できますが、人名や映画やドラマのタイトルといった固有名詞の平仮名化はかなり苦手です。ただ、地名に関してはPykakasiよりひらがな化APIの方が若干優秀だったので今回はひらがな化APIを採用しました。
 
-一応、バビ語変換器はひらがな化APIとPykakasiの2パターン作成してあるので、見たい方は[こちら]()から見ることができます。
+一応、バビ語変換器はひらがな化APIとPykakasiの2パターン作成してあるので、見たい方は[こちら](https://github.com/zoniha/babigo/blob/main/converter/hiragana_converter.py)から見ることができます。
 
 ## バビ語への変換
 ---
