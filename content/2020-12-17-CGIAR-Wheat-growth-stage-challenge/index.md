@@ -1,6 +1,6 @@
 ---
 title: "CGIAR Wheat Growth Stage Challenge"
-path: blog/cgiar- wheat-growth-stage-challenge
+path: blog/cgiar-wheat-growth-stage-challenge
 tags: [python, work]
 date: 2020-12-17
 cover: ./cover.jpg
