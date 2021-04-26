@@ -7,11 +7,16 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import FeatherIcon from 'feather-icons-react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { globalHistory } from '@reach/router';
-import style from './sidebar.module.less';
 import { useWindowSize } from '../../../utils/hooks';
-import Config from '../../../../config';
 
-import Footer from '../Footer'
+import style from './sidebar.module.less';
+/* Disable importing Font Awesome css */
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
+
+import Config from '../../../../config';
+import Footer from '../Footer';
 
 const { Content } = Layout;
 const {
