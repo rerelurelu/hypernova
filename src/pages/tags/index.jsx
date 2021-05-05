@@ -40,7 +40,7 @@ const Tags = ({ data }) => {
             <div className="marginTopTitle">
               <h1 className="titleSeparate">#Tags</h1>
             </div>
-            <Row gutter={[30, 20]}>
+            <Row gutter={[30, 20]} style={{marginTop: '30px'}}>
               {
                 edges.map((val) => (
                   <Col key={val.node.name} xs={24} sm={24} md={12} lg={8}>
