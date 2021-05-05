@@ -17,26 +17,6 @@ module.exports = {
   contactFormUrl: process.env.CONTACT_FORM_ENDPOINT,
   googleAnalyticTrackingId: process.env.GA_TRACKING_ID,
   tags: {
-    javascript: {
-      name: 'Javascript',
-      color: '#fff',
-    },
-    nodejs: {
-      name: 'Node.js',
-      color: '#f7f8f0',
-    },
-    typescript: {
-      name: 'Typescript',
-      color: '#f7f8f0',
-    },
-    reactjs: {
-      name: 'Reactjs',
-      color: '#f7f8f0',
-    },
-    gatsby: {
-      name: 'Gatsby.js',
-      color: '#f7f8f0',
-    },
     html: {
       name: 'HTML',
       color: '#f7f8f0',
