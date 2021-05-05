@@ -7,7 +7,7 @@ import Header from '../components/PageLayout/Header';
 import SidebarWrapper from '../components/PageLayout/Sidebar';
 import AboutMe from '../components/PageFragments/HomePage/AboutMe';
 import Skills from '../components/PageFragments/HomePage/SkillProgress';
-import Scroll from '../components/Scroll'
+import BackTop from '../components/BackTop'
 
 export default () => (
   <Layout className="outerPadding background">
@@ -20,6 +20,6 @@ export default () => (
         </>
       </SidebarWrapper>
     </Layout>
-    <Scroll showBelow={100} />
+    <BackTop showBelow={200} />
   </Layout>
 );

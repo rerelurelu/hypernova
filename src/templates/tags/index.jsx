@@ -14,7 +14,7 @@ import PostCard from '../../components/PostCard';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import Config from '../../../config';
 import Utils from '../../utils/pageUtils';
-import Scroll from '../../components/Scroll'
+import BackTop from '../../components/BackTop';
 import style from './tags.module.less';
 
 const TagPage = ({ data, pageContext }) => {
@@ -57,7 +57,7 @@ const TagPage = ({ data, pageContext }) => {
           </Row>
         </SidebarWrapper>
       </Layout>
-      <Scroll showBelow={100} />
+      <BackTop showBelow={200} />
     </Layout>
   );
 };

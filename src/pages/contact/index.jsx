@@ -5,7 +5,7 @@ import Header from '../../components/PageLayout/Header';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import ContactForm from '../../components/PageFragments/ContactForm';
 import SEO from '../../components/Seo';
-import Scroll from '../../components/Scroll'
+import BackTop from '../../components/BackTop'
 
 const Contact = () => (
   <Layout className="outerPadding background">
@@ -29,7 +29,7 @@ const Contact = () => (
         </Row>
       </SidebarWrapper>
     </Layout>
-    <Scroll showBelow={100} />
+    <BackTop showBelow={200} />
   </Layout>
 );
 

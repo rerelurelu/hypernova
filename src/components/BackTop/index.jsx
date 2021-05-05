@@ -2,16 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-import style from './scroll.module.less';
+import style from './backTop.module.less';
 /* Disable importing Font Awesome css */
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 
-const Scroll = ({ showBelow }) => {
+const BackTop = ({ showBelow }) => {
   const [show, setShow] = useState(showBelow ? false : true)
 
-  const handleScroll = () => {
+  const handleBackTop = () => {
     if (window.pageYOffset > showBelow) {
       if (!show) setShow(true)
     } else {
@@ -25,15 +25,15 @@ const Scroll = ({ showBelow }) => {
 
   useEffect(() => {
     if (showBelow) {
-      window.addEventListener(`scroll`, handleScroll)
-      return () => window.removeEventListener(`scroll`, handleScroll)
+      window.addEventListener(`scroll`, handleBackTop)
+      return () => window.removeEventListener(`scroll`, handleBackTop)
     }
   })
 
   return (
     <>
       {show && (
-        <div onClick={handleClick} id={style.scrollBtn} aria-label="to top">
+        <div onClick={handleClick} id={style.backTopBtn} aria-label="to top">
           <FontAwesomeIcon icon={faChevronUp} className={style.arrowIcon} />
         </div>
       )}
@@ -41,4 +41,4 @@ const Scroll = ({ showBelow }) => {
   )
 }
 
-export default Scroll
+export default BackTop
