@@ -12,15 +12,9 @@ const TagCard = (props) => {
   return (
     <Link to={Utils.resolvePageUrl(tagPage, name)}>
       <div className={style.tagCard}>
-        <div
-          className={style.tagImg}
-          style={{
-            backgroundImage: `url(${img})`,
-          }}
-        />
         <div className={style.pd20px}>
           <div className="textCenter">
-            <h4 style={{ color: `${color}` }}>
+            <h4 style={{ color: `${color}`, margin: 'auto' }}>
               #
               {name}
             </h4>
