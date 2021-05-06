@@ -33,5 +33,9 @@ module.exports = {
       name: 'Work',
       color: '#f7f8f0',
     },
+    django: {
+      name: 'Django',
+      color: '#f7f8f0',
+    }
   },
 };
