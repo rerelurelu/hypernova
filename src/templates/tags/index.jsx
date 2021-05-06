@@ -36,16 +36,9 @@ const TagPage = ({ data, pageContext }) => {
         />
         <SidebarWrapper>
           <div className={`marginTopTitle ${style.tagsList}`}>
-            <h1>
-              #
-              {tagName}
+            <h1 className="titleSeparate">
+              #{tagName}
             </h1>
-            <div className={style.bannerImgContainer}>
-              <Img className={style.bannerImg} fluid={tagImage} alt={tagName} />
-            </div>
-            <h4 className="textCenter">
-              {Config.tags[tag].description}
-            </h4>
           </div>
           <Row gutter={[20, 20]}>
             {posts.map((post, key) => (
