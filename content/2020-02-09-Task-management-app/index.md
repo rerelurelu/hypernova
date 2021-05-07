@@ -1,7 +1,7 @@
 ---
 title: "Task management app with Django"
 path: blog/task-management-app
-tags: [python, html, css, work]
+tags: [python, html, css, work, django]
 date: 2020-02-09
 cover: ./app-image.jpg
 excerpt: Djangoを利用してToDoリストを作成しました。
@@ -39,7 +39,7 @@ Djangoを利用して過去に作成した画像認識アプリは入力画像�
 ---
 - ユーザー登録
 
-![signup](https://user-images.githubusercontent.com/43092452/114406275-5e2f3b80-9be2-11eb-80ec-a91c3a096ef0.gif)
+![sign up](https://user-images.githubusercontent.com/43092452/114406275-5e2f3b80-9be2-11eb-80ec-a91c3a096ef0.gif)
 
 - ログイン
 
