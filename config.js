@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '',
   siteUrl: 'https://aspected-helios.netlify.app/',
-  siteTitle: 'Stellar Explosion',
+  siteTitle: 'Zaw',
   siteDescription: 'Zaw\'s portfolio',
   author: 'Zaw',
   postsForArchivePage: 3,
