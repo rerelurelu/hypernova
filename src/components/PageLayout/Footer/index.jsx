@@ -1,6 +1,6 @@
 import React from 'react';
 
-import style from './footer.module.less';
+import * as style from './footer.module.less';
 import '../../../styles/global.less';
 
 
