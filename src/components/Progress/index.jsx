@@ -1,7 +1,7 @@
 import React from 'react';
 import { Progress } from 'antd';
 
-import style from './progress.module.less';
+import * as style from './progress.module.less';
 
 const ProgressBar = (props) => {
   const { text, percent } = props;

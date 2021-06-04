@@ -4,7 +4,7 @@ import {
 import React from 'react';
 
 import Config from '../../../../config';
-import style from './contactForm.module.less';
+import * as style from './contactForm.module.less';
 
 const validateMessages = {
   required: 'This field is required!',

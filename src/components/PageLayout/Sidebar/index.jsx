@@ -4,12 +4,13 @@ import {
 } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 import FeatherIcon from 'feather-icons-react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { globalHistory } from '@reach/router';
 import { useWindowSize } from '../../../utils/hooks';
 
-import style from './sidebar.module.less';
+import * as style from './sidebar.module.less';
 /* Disable importing Font Awesome css */
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -20,7 +21,7 @@ import Footer from '../Footer';
 
 const { Content } = Layout;
 const {
-  github,
+  github, zenn,
 } = Config.social;
 
 const DomContent = () => (
@@ -36,6 +37,9 @@ const DomContent = () => (
       <div className="centerAlign box">
         <a href={github} target="_blank" label="button" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} className={style.sideBarIcon} />
+        </a>
+        <a href={zenn} title="zenn.dev/astrologian" target="_blank" label="button" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLink} className={`${style.sideBarIcon} ${style.sideBarIconMargin}`} />
         </a>
       </div>
       <div className="personalInfo">

@@ -9,7 +9,7 @@ import AboutMe from '../components/PageFragments/HomePage/AboutMe';
 import Skills from '../components/PageFragments/HomePage/SkillProgress';
 import BackTop from '../components/BackTop'
 
-export default () => (
+const MainPage = () => (
   <Layout className="outerPadding background">
     <Layout className="container">
       <Header />
@@ -23,3 +23,5 @@ export default () => (
     <BackTop showBelow={200} />
   </Layout>
 );
+
+export default MainPage;

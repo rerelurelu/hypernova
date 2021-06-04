@@ -2,9 +2,9 @@ import React from 'react';
 import '@fontsource/overpass';
 import '@fontsource/noto-sans-jp';
 
-import style from './404.module.less';
+import * as style from './404.module.less';
 
-export default () => (
+const ErrorPage = () => {
   <>
     <div className={style.main}>
       <div className={style.glitch} data-text="404">404</div>
@@ -12,4 +12,6 @@ export default () => (
         <h3 className={style.errorMessage}>Perhaps you misspelled the url ot it has been removed.</h3>
     </div>
   </>
-);
+};
+
+export default ErrorPage;
