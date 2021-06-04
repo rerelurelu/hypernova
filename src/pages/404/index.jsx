@@ -4,7 +4,7 @@ import '@fontsource/noto-sans-jp';
 
 import * as style from './404.module.less';
 
-const ErrorPage = () => {
+export default () => {
   <>
     <div className={style.main}>
       <div className={style.glitch} data-text="404">404</div>
@@ -13,5 +13,3 @@ const ErrorPage = () => {
     </div>
   </>
 };
-
-export default ErrorPage;
