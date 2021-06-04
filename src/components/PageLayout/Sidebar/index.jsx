@@ -29,11 +29,11 @@ const DomContent = () => (
     <div className={style.profileAvatar} />
     <div className={`${style.name} centerAlign`}>
       <div className={`${style.boxName} centerAlign`}>
-        <h2>
+        <h2 className={`${style.defaultCursor}`}>
           <span>Zaw</span>
         </h2>
       </div>
-      <div className={`${style.badge} ${style.badgeGray}`}>Job hunting</div>
+      <div className={`${style.badge} ${style.badgeGray} ${style.defaultCursor}`}>Job hunting</div>
       <div className="centerAlign box">
         <a href={github} target="_blank" label="button" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} className={style.sideBarIcon} />
@@ -44,14 +44,14 @@ const DomContent = () => (
       </div>
       <div className="personalInfo">
         <ul className={`box ${style.badge} contactBlock`}>
-          <li className={`${style.contactBlockItem}`}>
+          <li className={`${style.contactBlockItem} ${style.defaultCursor}`}>
             <span>
               <FeatherIcon size="19" icon="calendar" />
               {' '}
             </span>
           &nbsp; &nbsp; September 29
           </li>
-          <li className={`${style.contactBlockItem}`}>
+          <li className={`${style.contactBlockItem} ${style.defaultCursor}`}>
             <span><FeatherIcon size="19" icon="map-pin" /></span>
             {' '}
           &nbsp; &nbsp; Nagano, Japan
