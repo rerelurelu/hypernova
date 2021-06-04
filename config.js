@@ -1,6 +1,6 @@
 module.exports = {
   pathPrefix: '',
-  siteUrl: 'https://aspected-helios.netlify.app/',
+  siteUrl: 'https://zaw.netlify.app/',
   siteTitle: 'Zaw',
   siteDescription: 'Zaw\'s portfolio',
   author: 'Zaw',
@@ -10,6 +10,7 @@ module.exports = {
     home: '/',
     blog: 'blog',
     tag: 'tags',
+    contact: 'contact',
   },
   social: {
     github: 'https://github.com/zoniha',
