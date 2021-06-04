@@ -13,6 +13,7 @@ module.exports = {
   },
   social: {
     github: 'https://github.com/zoniha',
+    zenn: 'https://zenn.dev/astrologian',
   },
   contactFormUrl: process.env.CONTACT_FORM_ENDPOINT,
   googleAnalyticTrackingId: process.env.GA_TRACKING_ID,
