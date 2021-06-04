@@ -4,7 +4,7 @@ import '@fontsource/noto-sans-jp';
 
 import * as style from './404.module.less';
 
-export default () => {
+export default () => (
   <>
     <div className={style.main}>
       <div className={style.glitch} data-text="404">404</div>
@@ -12,4 +12,4 @@ export default () => {
         <h3 className={style.errorMessage}>Perhaps you misspelled the url ot it has been removed.</h3>
     </div>
   </>
-};
+);
