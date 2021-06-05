@@ -7,8 +7,8 @@ const pageText = {
   paraOne: `Hello, I'm  Zaw. I studied data science and machine learning at university.
     At the university, I participated in a data analysis project with Shiga Lakestars,
     and I was in charge of creating a program to detect players and balls.`,
-  paraTwo: `Currently I'm studying HTML/CSS, Javascript, and Django in order to acquire
-    knowledge in web developer skills.`,
+  paraTwo: `Currently I'm studying Dart and Flutter in order to acquire
+    knowledge in mobile application developer skills.`,
 };
 
 const AboutMe = () => {
