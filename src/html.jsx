@@ -11,6 +11,7 @@ export default class HTML extends React.Component {
     return (
       <html lang="ja_JP" {...this.props.htmlAttributes}>
         <head>
+          <meta name="google-site-verification" content="m3jm0gBXjQI8ZHz99A7EWBdavzayADru2ZHcMIVhbRo" />
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
