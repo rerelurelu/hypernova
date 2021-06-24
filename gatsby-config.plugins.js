@@ -1,6 +1,7 @@
 const config = require('./config');
 
 module.exports = [
+  'gatsby-plugin-sitemap',
   'gatsby-plugin-react-helmet',
   'gatsby-transformer-sharp',
   'gatsby-plugin-sharp',
