@@ -1,7 +1,7 @@
 import React from 'react';
 import { stripTags } from '../../../utils/stripTags';
 
-import SEO from '../../Seo';
+import { SEO } from '../../index';
 
 const pageText = {
   paraOne: `Hello, I'm  Zaw. I studied data science and machine learning at university.
@@ -15,21 +15,15 @@ const AboutMe = () => {
   const description = `${pageText.paraOne} ${stripTags(pageText.paraTwo)}`;
   return (
     <>
-      <div>
-        <SEO
-          title='HOME'
-          description={description}
-          path=""
-          keywords={['FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
-        />
-        <h1 className="titleSeparate">About Me</h1>
-        <p>
-          {pageText.paraOne}
-        </p>
-        <p>
-          {pageText.paraTwo}
-        </p>
-      </div>
+      <SEO
+        title="HOME"
+        description={description}
+        path=""
+        keywords={['FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
+      />
+      <h1 className="titleSeparate">About Me</h1>
+      <p>{pageText.paraOne}</p>
+      <p>{pageText.paraTwo}</p>
     </>
   );
 };

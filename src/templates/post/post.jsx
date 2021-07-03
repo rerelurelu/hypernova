@@ -3,10 +3,7 @@ import { Layout } from 'antd';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import Header from '../../components/PageLayout/Header';
-import SidebarWrapper from '../../components/PageLayout/Sidebar';
-import SEO from '../../components/Seo';
-import BackTop from '../../components/BackTop'
+import { Header, SidebarWrapper, SEO, BackTop } from '../../components/index';
 
 import 'prismjs/themes/prism-solarizedlight.css';
 import './highlight-syntax.less';
@@ -15,7 +12,12 @@ import * as style from './post.module.less';
 const Post = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
   const {
-    title, cover: { childImageSharp: { fluid } }, excerpt, path,
+    title,
+    cover: {
+      childImageSharp: { fluid },
+    },
+    excerpt,
+    path,
   } = frontmatter;
 
   return (
@@ -25,7 +27,14 @@ const Post = ({ data }) => {
           title={title}
           description={excerpt}
           path={path}
-          keywords={['FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
+          keywords={[
+            'FullStack developer',
+            'Javascript',
+            'ReactJS',
+            'NodeJS',
+            'Gatsby',
+            'technology',
+          ]}
         />
         <Header />
         <SidebarWrapper>

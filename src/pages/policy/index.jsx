@@ -3,19 +3,14 @@ import { Layout } from 'antd';
 import '@fontsource/overpass';
 import '@fontsource/noto-sans-jp';
 
-import Header from '../../components/PageLayout/Header';
-import SidebarWrapper from '../../components/PageLayout/Sidebar';
-import PrivacyPolicy from '../../components/PageFragments/privacyPolicy';
-import BackTop from '../../components/BackTop'
+import { Header, SidebarWrapper, PrivacyPolicy, BackTop } from '../../components/index';
 
 const Policy = () => (
   <Layout className="outerPadding background">
     <Layout className="container">
       <Header />
       <SidebarWrapper>
-        <>
-          <PrivacyPolicy />
-        </>
+        <PrivacyPolicy />
       </SidebarWrapper>
     </Layout>
     <BackTop showBelow={200} />

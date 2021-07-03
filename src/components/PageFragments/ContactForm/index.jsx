@@ -1,6 +1,4 @@
-import {
-  Col, Form, Input, Button, message,
-} from 'antd';
+import { Col, Form, Input, Button, message } from 'antd';
 import React from 'react';
 
 import Config from '../../../../config';
@@ -12,7 +10,8 @@ const validateMessages = {
     email: 'Not a valid email!',
   },
 };
-export default () => {
+
+const ContactForm = () => {
   const [form] = Form.useForm();
   const onFinish = (data) => {
     const formData = new FormData();
@@ -35,7 +34,10 @@ export default () => {
   return (
     <>
       <Col sm={24} md={24} lg={12} className="widthFull">
-        <Form form={form} name="nest-messages" onFinish={onFinish}
+        <Form
+          form={form}
+          name="nest-messages"
+          onFinish={onFinish}
           validateMessages={validateMessages}
           className={style.contactForm}
         >
@@ -52,7 +54,13 @@ export default () => {
             <Input.TextArea size="large" rows={7} placeholder="Message *" />
           </Form.Item>
           <Form.Item>
-            <Button type="primary" shape="round" size="large" htmlType="submit"className={style.sendBtn}>
+            <Button
+              type="primary"
+              shape="round"
+              size="large"
+              htmlType="submit"
+              className={style.sendBtn}
+            >
               SEND
             </Button>
           </Form.Item>
@@ -61,3 +69,5 @@ export default () => {
     </>
   );
 };
+
+export default ContactForm;
