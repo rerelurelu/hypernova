@@ -1,7 +1,7 @@
 ---
 title: "Task management app with Django"
 path: blog/task-management-app
-tags: [python, html, css, work, django]
+tags: [python, html, css, django]
 date: 2020-02-09
 cover: ./app-image.jpg
 excerpt: Djangoを利用してToDoリストを作成しました。
