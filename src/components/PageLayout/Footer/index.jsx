@@ -3,15 +3,12 @@ import React from 'react';
 import * as style from './footer.module.less';
 import '../../../styles/global.less';
 
-
-export default () => {
+const Footer = () => {
   return (
-    <>
-      <div className={style.footer}>
-        <footer>
-          ©2021 Zaw.
-        </footer>
-      </div>
-    </>
+    <div className={style.footer}>
+      <footer>©2021 Zaw.</footer>
+    </div>
   );
 };
+
+export default Footer;

@@ -9,26 +9,26 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 
 const BackTop = ({ showBelow }) => {
-  const [show, setShow] = useState(showBelow ? false : true)
+  const [show, setShow] = useState(showBelow ? false : true);
 
   const handleBackTop = () => {
     if (window.pageYOffset > showBelow) {
-      if (!show) setShow(true)
+      if (!show) setShow(true);
     } else {
-      if (show) setShow(false)
+      if (show) setShow(false);
     }
-  }
+  };
 
   const handleClick = () => {
-    window[`scrollTo`]({ top: 0, behavior: `smooth` })
-  }
+    window[`scrollTo`]({ top: 0, behavior: `smooth` });
+  };
 
   useEffect(() => {
     if (showBelow) {
-      window.addEventListener(`scroll`, handleBackTop)
-      return () => window.removeEventListener(`scroll`, handleBackTop)
+      window.addEventListener(`scroll`, handleBackTop);
+      return () => window.removeEventListener(`scroll`, handleBackTop);
     }
-  })
+  });
 
   return (
     <>
@@ -38,7 +38,7 @@ const BackTop = ({ showBelow }) => {
         </div>
       )}
     </>
-  )
-}
+  );
+};
 
-export default BackTop
+export default BackTop;

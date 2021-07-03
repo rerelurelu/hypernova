@@ -1,28 +1,22 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
-import {
-  Layout, Row, Col,
-} from 'antd';
+import { Layout, Row, Col } from 'antd';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import '@fontsource/overpass';
 import '@fontsource/noto-sans-jp';
 
-import Header from '../../components/PageLayout/Header';
-import SEO from '../../components/Seo';
-import SidebarWrapper from '../../components/PageLayout/Sidebar';
-import TagCard from '../../components/TagCard';
+import { Header, SEO, SidebarWrapper, TagCard, BackTop } from '../../components/index';
 import Config from '../../../config';
-import BackTop from '../../components/BackTop'
 
 const Tags = ({ data }) => {
-  const { allFile: { edges } } = data;
+  const {
+    allFile: { edges },
+  } = data;
   const rawTags = data.allMarkdownRemark.edges
     .map((edge) => edge.node.frontmatter.tags)
     .reduce((prev, curr) => prev.concat(curr));
-  rawTags
-    .filter((tag, index) => index === rawTags.indexOf(tag))
-    .sort(); // Remove duplicates and sort values
+  rawTags.filter((tag, index) => index === rawTags.indexOf(tag)).sort(); // Remove duplicates and sort values
   // const tagPage = Config.pages.tag;
   const tagData = Config.tags;
   return (
@@ -36,24 +30,20 @@ const Tags = ({ data }) => {
           path="tags"
         />
         <SidebarWrapper>
-          <>
-            <div className="marginTopTitle">
-              <h1 className="titleSeparate">Tags</h1>
-            </div>
-            <Row gutter={[30, 20]} style={{marginTop: '30px'}}>
-              {
-                edges.map((val) => (
-                  <Col key={val.node.name} xs={24} sm={24} md={12} lg={8}>
-                    <TagCard
-                      img={val.node.childImageSharp.fluid.src}
-                      name={val.node.name}
-                      color={tagData[val.node.name].color}
-                    />
-                  </Col>
-                ))
-              }
-            </Row>
-          </>
+          <div className="marginTopTitle">
+            <h1 className="titleSeparate">Tags</h1>
+          </div>
+          <Row gutter={[30, 20]} style={{ marginTop: '30px' }}>
+            {edges.map((val) => (
+              <Col key={val.node.name} xs={24} sm={24} md={12} lg={8}>
+                <TagCard
+                  img={val.node.childImageSharp.fluid.src}
+                  name={val.node.name}
+                  color={tagData[val.node.name].color}
+                />
+              </Col>
+            ))}
+          </Row>
         </SidebarWrapper>
       </Layout>
       <BackTop showBelow={200} />
@@ -71,7 +61,7 @@ Tags.propTypes = {
               tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
             }).isRequired,
           }).isRequired,
-        }).isRequired,
+        }).isRequired
       ).isRequired,
     }).isRequired,
     allFile: PropTypes.shape({
@@ -83,7 +73,7 @@ Tags.propTypes = {
               fluid: PropTypes.object.isRequired,
             }).isRequired,
           }).isRequired,
-        }).isRequired,
+        }).isRequired
       ).isRequired,
     }).isRequired,
   }).isRequired,

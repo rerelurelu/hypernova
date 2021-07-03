@@ -1,11 +1,7 @@
 import React from 'react';
 import { Layout, Row, Col } from 'antd';
 
-import Header from '../../components/PageLayout/Header';
-import SidebarWrapper from '../../components/PageLayout/Sidebar';
-import ContactForm from '../../components/PageFragments/ContactForm';
-import SEO from '../../components/Seo';
-import BackTop from '../../components/BackTop'
+import { Header, SidebarWrapper, ContactForm, SEO, BackTop } from '../../components/index';
 
 const Contact = () => (
   <Layout className="outerPadding background">
@@ -14,7 +10,14 @@ const Contact = () => (
         title="Contact"
         description=""
         path="/contact"
-        keywords={['FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
+        keywords={[
+          'FullStack developer',
+          'Javascript',
+          'ReactJS',
+          'NodeJS',
+          'Gatsby',
+          'technology',
+        ]}
       />
       <Header />
       <SidebarWrapper>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SEO from '../../Seo';
+import { SEO } from '../../index';
 import { titleSpace } from './policy.module.less';
 
 const pageText = {
@@ -25,38 +25,16 @@ const pageText = {
 const PrivacyPolicy = () => {
   return (
     <>
-      <div>
-        <SEO
-          title='Privacy Policy'
-          path=""
-          keywords={['privacy policy']}
-        />
-        <h1 className="titleSeparate">『ユニエア 期待値計算機』プライバシーポリシー</h1>
-        <h3>
-          {pageText.paraOne.title}
-        </h3>
-        <p>
-          {pageText.paraOne.description}
-        </p>
-        <h3 className={titleSpace}>
-          {pageText.paraTwo.title}
-        </h3>
-        <p>
-          {pageText.paraTwo.description}
-        </p>
-        <h3 className={titleSpace}>
-          {pageText.paraThree.title}
-        </h3>
-        <p>
-          {pageText.paraThree.description}
-        </p>
-        <h3 className={titleSpace}>
-          {pageText.paraFour.title}
-        </h3>
-        <p>
-          {pageText.paraFour.description}
-        </p>
-      </div>
+      <SEO title="Privacy Policy" path="" keywords={['privacy policy']} />
+      <h1 className="titleSeparate">『ユニエア 期待値計算機』プライバシーポリシー</h1>
+      <h3>{pageText.paraOne.title}</h3>
+      <p>{pageText.paraOne.description}</p>
+      <h3 className={titleSpace}>{pageText.paraTwo.title}</h3>
+      <p>{pageText.paraTwo.description}</p>
+      <h3 className={titleSpace}>{pageText.paraThree.title}</h3>
+      <p>{pageText.paraThree.description}</p>
+      <h3 className={titleSpace}>{pageText.paraFour.title}</h3>
+      <p>{pageText.paraFour.description}</p>
     </>
   );
 };

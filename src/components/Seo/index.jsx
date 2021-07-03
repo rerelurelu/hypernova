@@ -34,17 +34,12 @@ function SEO({
     <StaticQuery
       query={detailsQuery}
       render={(data) => {
-        const metaKeywords = keywords && keywords.length > 0
-          ? { name: 'keywords', content: keywords.join(', ') }
-          : [];
-        const pageUrl = Utils.resolvePageUrl(
-          Config.siteUrl,
-          Config.pathPrefix,
-          path,
-        );
+        const metaKeywords =
+          keywords && keywords.length > 0 ? { name: 'keywords', content: keywords.join(', ') } : [];
+        const pageUrl = Utils.resolvePageUrl(Config.siteUrl, Config.pathPrefix, path);
         const metaImageUrl = Utils.resolveUrl(
           Config.siteUrl,
-          imageUrl || data.file.childImageSharp.fixed.src,
+          imageUrl || data.file.childImageSharp.fixed.src
         );
 
         return (
@@ -82,15 +77,11 @@ function SEO({
               .concat(
                 translations
                   ? translations.map((obj) => ({
-                    rel: 'alternate',
-                    hreflang: obj.hreflang,
-                    href: Utils.resolvePageUrl(
-                      Config.siteUrl,
-                      Config.pathPrefix,
-                      obj.path,
-                    ),
-                  }))
-                  : [],
+                      rel: 'alternate',
+                      hreflang: obj.hreflang,
+                      href: Utils.resolvePageUrl(Config.siteUrl, Config.pathPrefix, obj.path),
+                    }))
+                  : []
               )}
           />
         );
@@ -111,13 +102,13 @@ SEO.propTypes = {
     PropTypes.shape({
       hreflang: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
-    }),
+    })
   ),
   meta: PropTypes.arrayOf(
     PropTypes.shape({
       property: PropTypes.string.isRequired,
       content: PropTypes.string.isRequired,
-    }),
+    })
   ),
 };
 
