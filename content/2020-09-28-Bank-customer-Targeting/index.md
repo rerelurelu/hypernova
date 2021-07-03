@@ -1,7 +1,7 @@
 ---
 title: "Bank Customer Targeting"
 path: blog/cgiar-bank-customer-targeting
-tags: [python, work]
+tags: [python]
 date: 2020-12-17
 cover: ./cover.jpg
 excerpt: SIGNATEで開催された銀行の顧客ターゲティングコンペの参加記録です。
@@ -13,7 +13,7 @@ excerpt: SIGNATEで開催された銀行の顧客ターゲティングコンペ�
 ---
 ![score](https://user-images.githubusercontent.com/43092452/116044471-ec5bf500-a6ab-11eb-9379-de4658aaf8b4.jpg)
 
-19 / 558 位
+19 / 558 位（Top50、Kaggle Silver Medal相当）
 
 ## コンペの課題
 ---
