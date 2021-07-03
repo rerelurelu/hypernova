@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '',
   siteUrl: 'https://zaw.netlify.app/',
   siteTitle: 'Zaw',
-  siteDescription: 'Zaw\'s portfolio',
+  siteDescription: "Zaw's portfolio",
   author: 'Zaw',
   postsForArchivePage: 3,
   defaultLanguage: 'ja',
@@ -34,6 +34,6 @@ module.exports = {
     django: {
       name: 'Django',
       color: '#f7f8f0',
-    }
+    },
   },
 };
