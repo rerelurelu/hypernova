@@ -1,12 +1,18 @@
 const config = require('./config');
 
 module.exports = [
-  'gatsby-plugin-sitemap',
   'gatsby-plugin-react-helmet',
   'gatsby-transformer-sharp',
   'gatsby-plugin-sharp',
   'gatsby-plugin-less',
   'gatsby-plugin-offline',
+  {
+    resolve: 'gatsby-plugin-sitemap',
+    options: {
+      output: '/sitemap.xml',
+      createLinkInHead: true,
+    },
+  },
   {
     resolve: 'gatsby-source-filesystem',
     options: {
