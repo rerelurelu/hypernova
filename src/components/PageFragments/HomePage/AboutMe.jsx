@@ -4,11 +4,10 @@ import { stripTags } from '../../../utils/stripTags';
 import { SEO } from '../../index';
 
 const pageText = {
-  paraOne: `Hello, I'm  Zaw. I studied data science and machine learning at university.
-    At the university, I participated in a data analysis project with Shiga Lakestars,
-    and I was in charge of creating a program to detect players and balls.`,
-  paraTwo: `Currently I'm studying Dart and Flutter in order to acquire
-    knowledge in mobile application developer skills.`,
+  paraOne: `大学では経済学やデータサイエンス、機械学習を学びました。
+    大学とプロバスケットボールチームが提携して行われたデータ分析プロジェクトに参加し、
+    画像認識技術を応用して映像から選手やボールの検出を行うプログラムの作成を担当しました。`,
+  paraTwo: `現在はWebサービスやモバイルアプリ開発の知識をつけるためにReactやFlutterの勉強をしています。`,
 };
 
 const AboutMe = () => {
@@ -19,7 +18,15 @@ const AboutMe = () => {
         title="HOME"
         description={description}
         path=""
-        keywords={['FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
+        keywords={[
+          'エンジニア',
+          'Javascript',
+          'ReactJS',
+          'GatsbyJS',
+          'Python',
+          'Django',
+          'Flutter',
+        ]}
       />
       <h1 className="titleSeparate">About Me</h1>
       <p>{pageText.paraOne}</p>
