@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
   return (
     <>
       <SEO title="Privacy Policy" path="" keywords={['privacy policy']} />
-      <h1 className="titleSeparate">『ユニエア 期待値計算機』プライバシーポリシー</h1>
+      <h1 className="titleSeparate">プライバシーポリシー</h1>
       <h3>{pageText.paraOne.title}</h3>
       <p>{pageText.paraOne.description}</p>
       <h3 className={titleSpace}>{pageText.paraTwo.title}</h3>
