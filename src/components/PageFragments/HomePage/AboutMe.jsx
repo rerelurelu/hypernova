@@ -8,10 +8,11 @@ const pageText = {
     大学とプロバスケットボールチームが提携して行われたデータ分析プロジェクトに参加し、
     画像認識技術を応用して映像から選手やボールの検出を行うプログラムの作成を担当しました。`,
   paraTwo: `現在はWebサービスやモバイルアプリ開発の知識をつけるためにReactやFlutterの勉強をしています。`,
+  description: `Zawのプログラミング日記です。作成したサイトやアプリについて書いています。`,
 };
 
 const AboutMe = () => {
-  const description = `${pageText.paraOne} ${stripTags(pageText.paraTwo)}`;
+  const description = `${pageText.description}`;
   return (
     <>
       <SEO
