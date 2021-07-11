@@ -1,6 +1,6 @@
 module.exports = {
   pathPrefix: '',
-  siteUrl: 'https://zaw.netlify.app/',
+  siteUrl: 'https://zaw.vercel.app/',
   siteTitle: 'Zaw',
   siteDescription: "Zaw's portfolio",
   author: 'Zaw',
