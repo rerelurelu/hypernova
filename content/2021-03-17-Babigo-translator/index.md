@@ -4,7 +4,7 @@ path: blog/babigo-translator
 tags: [python, html, css, django]
 date: 2021-03-17
 cover: ./cover.jpg
-excerpt: 入力された文章をバビ語に変換できます。
+excerpt: 入力された文章をバビ語に変換するサイトを作った時の話。
 ---
 
 ## 概要

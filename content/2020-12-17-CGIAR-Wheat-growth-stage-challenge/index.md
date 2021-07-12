@@ -1,15 +1,10 @@
 ---
-
 title: "CGIAR Wheat Growth Stage Challenge"
 path: blog/cgiar-wheat-growth-stage-challenge
 tags: [python]
 date: 2020-12-17
 cover: ./cover.jpg
-
-## excerpt: Zindiで開催されたCGIAR Wheat Growth Stage Challengeコンペの参加記録です
-
-## CGIAR Wheat Growth Stage Challenge
-
+excerpt: Zindiで開催されたCGIAR Wheat Growth Stage Challengeコンペの参加記録日記。
 ---
 
 [About competition](https://zindi.africa/competitions/cgiar-wheat-growth-stage-challenge)
