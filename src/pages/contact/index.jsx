@@ -6,19 +6,7 @@ import { Header, SidebarWrapper, ContactForm, SEO, BackTop } from '../../compone
 const Contact = () => (
   <Layout className="outerPadding background">
     <Layout className="container">
-      <SEO
-        title="Contact"
-        description=""
-        path="/contact"
-        keywords={[
-          'FullStack developer',
-          'Javascript',
-          'ReactJS',
-          'NodeJS',
-          'Gatsby',
-          'technology',
-        ]}
-      />
+      <SEO title="Contact" description="" path="/contact" />
       <Header />
       <SidebarWrapper>
         <div className="marginTopTitle">

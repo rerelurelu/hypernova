@@ -27,14 +27,7 @@ const Post = ({ data }) => {
           title={title}
           description={excerpt}
           path={path}
-          keywords={[
-            'FullStack developer',
-            'Javascript',
-            'ReactJS',
-            'NodeJS',
-            'Gatsby',
-            'technology',
-          ]}
+          keywords={['Javascript', 'ReactJS', 'NodeJS', 'Gatsby', '技術ブログ']}
         />
         <Header />
         <SidebarWrapper>

@@ -24,7 +24,7 @@ const TagPage = ({ data, pageContext }) => {
         <Header />
         <SEO
           title={tagName}
-          description={`All post about ${tagName}. ${Config.tags[tag].description} `}
+          description={`${tagName}に関する全ての記事です。  ${Config.tags[tag].description} `}
           path={Utils.resolvePageUrl(tagPagePath, tag)}
           keywords={[tagName]}
         />
