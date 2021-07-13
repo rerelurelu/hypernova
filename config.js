@@ -35,5 +35,9 @@ module.exports = {
       name: 'Django',
       color: '#f7f8f0',
     },
+    flutter: {
+      name: 'Flutter',
+      color: '#f7f8f0',
+    },
   },
 };
