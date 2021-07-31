@@ -1,6 +1,6 @@
 module.exports = {
   pathPrefix: '',
-  siteUrl: 'https://zaw.vercel.app/',
+  siteUrl: 'https://www.zaw.icu',
   siteTitle: 'Zaw',
   siteDescription: "Zaw's portfolio",
   author: 'Zaw',
@@ -16,8 +16,8 @@ module.exports = {
     github: 'https://github.com/zoniha',
     zenn: 'https://zenn.dev/astrologian',
   },
-  contactFormUrl: process.env.CONTACT_FORM_ENDPOINT,
-  googleAnalyticTrackingId: process.env.GA_TRACKING_ID,
+  contactFormUrl: process.env.GATSBY_CONTACT_FORM_ENDPOINT,
+  googleAnalyticTrackingId: process.env.GATSBY_GA_TRACKING_ID,
   tags: {
     html: {
       name: 'HTML',
