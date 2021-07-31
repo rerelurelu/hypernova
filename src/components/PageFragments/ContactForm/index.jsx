@@ -24,7 +24,7 @@ const ContactForm = () => {
 
     fetch(Config.contactFormUrl, { method: 'POST', body: formData })
       .then(() => {
-        message.success('Thank you for your kind response 🙂. Will get back to you.');
+        message.success('メッセージの送信に成功しました🙂.');
         form.resetFields();
       })
       // eslint-disable-next-line no-console
@@ -44,8 +44,8 @@ const ContactForm = () => {
           <Form.Item name={['name']} rules={[{ required: true }]}>
             <Input size="large" placeholder="Name *" />
           </Form.Item>
-          <Form.Item name={['email']} rules={[{ type: 'email' }]}>
-            <Input size="large" placeholder="Email" />
+          <Form.Item name={['email']} rules={[{ type: 'email', required: true }]}>
+            <Input size="large" placeholder="Email *" />
           </Form.Item>
           <Form.Item name={['subject']} rules={[{ required: true }]}>
             <Input size="large" placeholder="Subject *" />
