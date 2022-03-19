@@ -1,6 +1,4 @@
 import React from 'react';
-import { stripTags } from '../../../utils/stripTags';
-
 import { SEO } from '../../index';
 
 const pageText = {
