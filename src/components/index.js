@@ -8,7 +8,6 @@ export { default as Header } from './PageLayout/Header';
 export { default as Footer } from './PageLayout/Footer';
 export { default as SidebarWrapper } from './PageLayout/Sidebar';
 export { default as PostCard } from './PostCard';
-export { default as TagCard } from './TagCard';
 export { default as ProgressBar } from './Progress';
 
 /* Utils */
