@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import { Link } from 'gatsby';
+import { Twemoji } from 'react-emoji-render';
 import * as style from './postCard.module.less';
 import Utils from '../../utils/pageUtils';
 
@@ -12,17 +13,11 @@ const PostCard = (props) => {
   } = props;
 
   return (
-    <div className={style.postCard}>
-      <Link to={Utils.resolvePageUrl(frontmatter.path)}>
-        <div
-          className={style.postCardImg}
-          style={{
-            backgroundImage: `url(${
-              frontmatter ? frontmatter.cover.childImageSharp.fluid.src : ''
-            })`,
-            backgroundPosition: 'center',
-          }}
-        />
+    <Link to={Utils.resolvePageUrl(frontmatter.path)}>
+      <div className={style.postCard}>
+        <p className={style.postCardEmoji}>
+          <Twemoji svg text={frontmatter.emoji || '🥱'} />
+        </p>
         <div className={style.mrTp20}>
           <p>
             <span className={style.dateHolder}>
@@ -33,8 +28,8 @@ const PostCard = (props) => {
           <p>{frontmatter ? frontmatter.excerpt : ''}</p>
           <p className={style.tags}>{`#${frontmatter.tags.join(' #')}`}</p>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 

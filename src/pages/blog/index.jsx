@@ -53,13 +53,7 @@ export const query = graphql`
             title
             tags
             excerpt
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 288) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            }
+            emoji
           }
         }
       }

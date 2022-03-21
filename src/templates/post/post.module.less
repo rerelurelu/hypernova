@@ -1,16 +1,5 @@
 @import (reference) '../../styles/index.less';
 
-.bannerImgContainer{
-    padding: 1rem 4rem;
-    margin-bottom: 2rem;
-    .bannerImg{
-        border-radius: 10px;
-    }
-    @media only screen and (max-width: 767px) {
-            padding: 1rem 0;
-    }
-}
-
 .blogArticle{
     h1, h2, h3, h4, h5, h6 {
         margin-top: 2rem;
@@ -28,8 +17,30 @@
         color: rgba(243, 137, 142, 1);
         font-weight: 600;
     }
-    img{
-        max-width: 100%;
-        border-radius: 10px;
+}
+
+.title {
+    font-size: xxx-large;
+    margin: 85px auto;
+    text-align: center;
+}
+
+.postEmoji {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: #E9EDF2;
+    border-radius: 12px;
+    font-size: 50px;
+    img {
+        width: 180px !important;
+        height: 180px !important;
+        display: block;
+        margin: 20px auto !important;
     }
 }

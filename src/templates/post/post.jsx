@@ -1,6 +1,7 @@
 import React from 'react';
 import { Layout } from 'antd';
 import { graphql } from 'gatsby';
+import { Twemoji } from 'react-emoji-render';
 import Img from 'gatsby-image';
 
 import { Header, SidebarWrapper, SEO, BackTop } from '../../components/index';
@@ -11,14 +12,7 @@ import * as style from './post.module.less';
 
 const Post = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
-  const {
-    title,
-    cover: {
-      childImageSharp: { fluid },
-    },
-    excerpt,
-    path,
-  } = frontmatter;
+  const { title, emoji, excerpt, path } = frontmatter;
 
   return (
     <Layout className="outerPadding background">
@@ -27,15 +21,15 @@ const Post = ({ data }) => {
           title={title}
           description={excerpt}
           path={path}
-          keywords={['Javascript', 'ReactJS', 'NodeJS', 'Gatsby', '技術ブログ']}
+          keywords={['Javascript', 'ReactJS', 'Gatsby', '技術ブログ']}
         />
         <Header />
         <SidebarWrapper>
           <div className="marginTopTitle">
-            <h1>{title}</h1>
-            <div className={style.bannerImgContainer}>
-              <Img className={style.bannerImg} fluid={fluid} title={excerpt} alt={title} />
-            </div>
+            <p className={style.postEmoji}>
+              <Twemoji svg text={emoji || '🥱'} className={style.bannerImg} />
+            </p>
+            <h1 className={style.title}>{title}</h1>
             <article className={style.blogArticle} dangerouslySetInnerHTML={{ __html: html }} />
             {/* <Comment pageCanonicalUrl={canonicalUrl} pageId={title} /> */}
           </div>
@@ -47,7 +41,7 @@ const Post = ({ data }) => {
 };
 
 export const pageQuery = graphql`
-  query($postPath: String!) {
+  query ($postPath: String!) {
     markdownRemark(frontmatter: { path: { eq: $postPath } }) {
       html
       timeToRead
@@ -57,13 +51,7 @@ export const pageQuery = graphql`
         tags
         path
         excerpt
-        cover {
-          childImageSharp {
-            fluid(maxWidth: 1000, quality: 100) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
+        emoji
       }
     }
     allMarkdownRemark(
@@ -79,13 +67,7 @@ export const pageQuery = graphql`
             title
             tags
             excerpt
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 600, quality: 100) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            }
+            emoji
           }
         }
       }
