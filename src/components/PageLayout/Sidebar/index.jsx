@@ -29,7 +29,9 @@ const DomContent = () => (
           <span>zoniha</span>
         </h2>
       </div>
-      <div className={`${style.badge} ${style.badgeGray} ${style.defaultCursor}`}>Job hunting</div>
+      <div className={`${style.badge} ${style.badgeGray} ${style.defaultCursor}`}>
+        Software developer
+      </div>
       <div className="centerAlign box">
         <a href={github} target="_blank" label="button" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} className={style.sideBarIcon} />
@@ -51,15 +53,9 @@ const DomContent = () => (
         <ul className={`box ${style.badge} contactBlock`}>
           <li className={`${style.contactBlockItem} ${style.defaultCursor}`}>
             <span>
-              <FeatherIcon size="19" icon="calendar" />{' '}
-            </span>
-            &nbsp; &nbsp; September 29
-          </li>
-          <li className={`${style.contactBlockItem} ${style.defaultCursor}`}>
-            <span>
               <FeatherIcon size="19" icon="map-pin" />
             </span>{' '}
-            &nbsp; &nbsp; Nagano, Japan
+            &nbsp; &nbsp; Tokyo, Japan
           </li>
         </ul>
       </div>
@@ -93,9 +89,7 @@ const Sidebar = (props) => {
             {domContent}
           </Col>
           <Col sm={24} md={15} lg={18}>
-            <Layout
-              className={`${style.background} ${style.boxContent}  borderRadiusSection`}
-            >
+            <Layout className={`${style.background} ${style.boxContent}  borderRadiusSection`}>
               {children}
             </Layout>
           </Col>
