@@ -5,7 +5,7 @@ import Utils from '../../utils/pageUtils';
 import * as style from './tags.module.less';
 
 const TagCard = (props) => {
-  const { img, name, color } = props;
+  const { name, color } = props;
   const tagPage = Config.pages.tag;
   return (
     <Link to={Utils.resolvePageUrl(tagPage, name)}>

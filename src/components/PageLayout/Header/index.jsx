@@ -51,11 +51,6 @@ const Header = () => {
               </Link>
             </li>
             <li className={style.navItem}>
-              <Link to="/tags" onClick={toggleMenu} activeClassName={style.anchorActive}>
-                Tags
-              </Link>
-            </li>
-            <li className={style.navItem}>
               <Link to="/contact" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 Contact
               </Link>

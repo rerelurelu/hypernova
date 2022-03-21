@@ -2,7 +2,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import { Layout, Row, Col } from 'antd';
 
 import { SEO, Header, PostCard, SidebarWrapper, BackTop } from '../../components/index';
@@ -15,8 +14,6 @@ const TagPage = ({ data, pageContext }) => {
   const { tag } = pageContext;
   const tagName = Config.tags[tag].name || Utils.capitalize(tag);
   const tagPagePath = Config.pages.tag;
-  const tagImage = data.allFile.edges.find((edge) => edge.node.name === tag).node.childImageSharp
-    .fluid;
   const posts = data.allMarkdownRemark.edges;
   return (
     <Layout className="outerPadding background">
@@ -71,7 +68,7 @@ TagPage.propTypes = {
 };
 
 export const pageQuery = graphql`
-  query($tag: String!) {
+  query ($tag: String!) {
     allMarkdownRemark(
       filter: { frontmatter: { tags: { in: [$tag] } }, fileAbsolutePath: { regex: "/index.md$/" } }
       sort: { fields: [frontmatter___date], order: DESC }
@@ -90,18 +87,6 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
-            }
-          }
-        }
-      }
-    }
-    allFile(filter: { name: { eq: $tag }, dir: { regex: "/tags$/" } }) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            fluid(maxHeight: 600) {
-              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
