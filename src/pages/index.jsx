@@ -3,7 +3,7 @@ import { Layout } from 'antd';
 import '@fontsource/overpass';
 import '@fontsource/noto-sans-jp';
 
-import { Header, SidebarWrapper, AboutMe, Skills, BackTop } from '../components/index';
+import { Header, SidebarWrapper, AboutMe, BackTop } from '../components/index';
 
 const MainPage = () => (
   <Layout className="outerPadding background">
@@ -11,7 +11,6 @@ const MainPage = () => (
       <Header />
       <SidebarWrapper>
         <AboutMe />
-        <Skills />
       </SidebarWrapper>
     </Layout>
     <BackTop showBelow={200} />
