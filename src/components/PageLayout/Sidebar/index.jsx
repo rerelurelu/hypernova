@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { Affix, Layout, Row, Col } from 'antd';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { SiZenn, SiGithub } from 'react-icons/si';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import FeatherIcon from 'feather-icons-react';
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -33,21 +33,12 @@ const DomContent = () => (
         Software developer
       </div>
       <div className="centerAlign box">
-        <a href={github} target="_blank" label="button" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} className={style.sideBarIcon} />
-        </a>
-        <a
-          href={zenn}
-          title="zenn.dev/astrologian"
-          target="_blank"
-          label="button"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faLink}
-            className={`${style.sideBarIcon} ${style.sideBarIconMargin}`}
-          />
-        </a>
+        <Link to={github} title="GitHub" target="_blank" rel="noopener noreferrer">
+          <SiGithub className={style.sideBarIcon} />
+        </Link>
+        <Link to={zenn} title="zenn.dev" target="_blank" rel="noopener noreferrer">
+          <SiZenn className={`${style.sideBarIcon} ${style.sideBarIconMargin}`} />
+        </Link>
       </div>
       <div className="personalInfo">
         <ul className={`box ${style.badge} contactBlock`}>
