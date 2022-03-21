@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: '',
   siteUrl: 'https://www.zaw.icu',
-  siteTitle: 'Zaw',
-  siteDescription: "Zaw's portfolio",
-  author: 'Zaw',
+  siteTitle: 'zoniha',
+  siteDescription: "zoniha's portfolio",
+  author: 'zoniha',
   postsForArchivePage: 3,
   defaultLanguage: 'ja',
   pages: {

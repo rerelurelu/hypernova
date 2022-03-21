@@ -6,7 +6,7 @@ import '../../../styles/global.less';
 const Footer = () => {
   return (
     <div className={style.footer}>
-      <footer>©2021 Zaw.</footer>
+      <footer>©2021 zoniha.</footer>
     </div>
   );
 };

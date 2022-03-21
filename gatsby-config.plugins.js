@@ -23,8 +23,8 @@ module.exports = [
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      name: 'Zaw',
-      short_name: 'Zaw',
+      name: 'zoniha',
+      short_name: 'zoniha',
       start_url: '/',
       background_color: '#304CFD',
       theme_color: '#304CFD',

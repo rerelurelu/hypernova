@@ -11,7 +11,7 @@ const Blog = ({ data }) => (
   <Layout className="outerPadding background">
     <Layout className="container">
       <Header />
-      <SEO title="Blog" description="Zawのプログラミング日記。" path="blog" />
+      <SEO title="Blog" description="zoniha's blog" path="blog" />
       <SidebarWrapper>
         <div className="marginTopTitle">
           <h1 className="titleSeparate">Blog</h1>

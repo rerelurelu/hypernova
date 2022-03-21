@@ -26,7 +26,7 @@ const DomContent = () => (
     <div className={`${style.name} centerAlign`}>
       <div className={`${style.boxName} centerAlign`}>
         <h2 className={`${style.defaultCursor}`}>
-          <span>Zaw</span>
+          <span>zoniha</span>
         </h2>
       </div>
       <div className={`${style.badge} ${style.badgeGray} ${style.defaultCursor}`}>Job hunting</div>

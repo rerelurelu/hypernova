@@ -1,7 +1,7 @@
 {
-  "name": "zaw-site",
+  "name": "zoniha-site",
   "private": true,
-  "description": "Zaw's web site",
+  "description": "zoniha's web site",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
