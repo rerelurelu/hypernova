@@ -3,8 +3,7 @@ title: "CGIAR Wheat Growth Stage Challenge"
 path: blog/cgiar-wheat-growth-stage-challenge
 tags: [python]
 date: 2020-12-17
-cover: ./cover.jpg
-emoji: "🔥"
+emoji: "🌾"
 excerpt: Zindiで開催されたCGIAR Wheat Growth Stage Challengeコンペの参加記録日記。
 ---
 

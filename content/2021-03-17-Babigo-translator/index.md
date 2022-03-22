@@ -3,8 +3,7 @@ title: "バビ語変換サイト"
 path: blog/babigo-translator
 tags: [python, html, css, django]
 date: 2021-03-17
-cover: ./cover.jpg
-emoji: "🔥"
+emoji: "🔄"
 excerpt: 入力された文章をバビ語に変換するサイトを作った時の話。
 ---
 

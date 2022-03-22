@@ -3,8 +3,7 @@ title: "ゲームの補助ツールアプリを初めて作った話"
 path: blog/uoa-ev-calculator
 tags: [flutter]
 date: 2021-06-25
-cover: ./tmb.jpg
-emoji: "🔥"
+emoji: "🎮"
 excerpt: Flutterを使って初めてiOSアプリを開発した時の話。
 ---
 
