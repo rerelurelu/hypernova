@@ -33,39 +33,37 @@ const ContactForm = () => {
 
   return (
     <>
-      <Col sm={24} md={24} lg={12} className="widthFull">
-        <Form
-          form={form}
-          name="nest-messages"
-          onFinish={onFinish}
-          validateMessages={validateMessages}
-          className={style.contactForm}
-        >
-          <Form.Item name={['name']} rules={[{ required: true }]}>
-            <Input size="large" placeholder="Name *" />
-          </Form.Item>
-          <Form.Item name={['email']} rules={[{ type: 'email', required: true }]}>
-            <Input size="large" placeholder="Email *" />
-          </Form.Item>
-          <Form.Item name={['subject']} rules={[{ required: true }]}>
-            <Input size="large" placeholder="Subject *" />
-          </Form.Item>
-          <Form.Item name={['message']} rules={[{ required: true }]}>
-            <Input.TextArea size="large" rows={7} placeholder="Message *" />
-          </Form.Item>
-          <Form.Item>
-            <Button
-              type="primary"
-              shape="round"
-              size="large"
-              htmlType="submit"
-              className={style.sendBtn}
-            >
-              SEND
-            </Button>
-          </Form.Item>
-        </Form>
-      </Col>
+      <Form
+        form={form}
+        name="nest-messages"
+        onFinish={onFinish}
+        validateMessages={validateMessages}
+        className={style.contactForm}
+      >
+        <Form.Item name={['name']} rules={[{ required: true }]}>
+          <Input size="large" placeholder="Name *" />
+        </Form.Item>
+        <Form.Item name={['email']} rules={[{ type: 'email', required: true }]}>
+          <Input size="large" placeholder="Email *" />
+        </Form.Item>
+        <Form.Item name={['subject']} rules={[{ required: true }]}>
+          <Input size="large" placeholder="Subject *" />
+        </Form.Item>
+        <Form.Item name={['message']} rules={[{ required: true }]}>
+          <Input.TextArea size="large" rows={7} placeholder="Message *" />
+        </Form.Item>
+        <Form.Item>
+          <Button
+            type="primary"
+            shape="round"
+            size="large"
+            htmlType="submit"
+            className={style.sendBtn}
+          >
+            SEND
+          </Button>
+        </Form.Item>
+      </Form>
     </>
   );
 };
