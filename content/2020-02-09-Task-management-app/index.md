@@ -4,6 +4,7 @@ path: blog/task-management-app
 tags: [python, html, css, django]
 date: 2020-02-09
 cover: ./app-image.jpg
+emoji: "🔥"
 excerpt: Djangoを利用してToDoリストを作成した時の話。
 ---
 

@@ -4,6 +4,7 @@ path: blog/uni-tool
 tags: [flutter]
 date: 2021-07-31
 cover: ./tmb.jpg
+emoji: "🔥"
 excerpt: ゆにつーるについて
 ---
 

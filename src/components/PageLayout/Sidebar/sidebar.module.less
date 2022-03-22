@@ -9,6 +9,9 @@
     border-radius: @border-radius-full;
     margin: 0px;
     min-height: 90vh;
+    @media screen and (max-width: 767px){
+        min-height: 0vh;
+    }
     aside{
         padding: @padding-margin-val;
         .profileAvatar{
@@ -58,7 +61,6 @@
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
-
                 }
             }
             .contactBlock {
@@ -123,6 +125,7 @@
     border-radius: 30px;
     @media screen and (max-width: 767px){
         padding: @padding-margin-val;
+        margin: 0 auto;
     }
 }
 

@@ -1,4 +1,4 @@
-import { Col, Form, Input, Button, message } from 'antd';
+import { Form, Input, Button, message } from 'antd';
 import React from 'react';
 
 import Config from '../../../../config';
@@ -53,15 +53,17 @@ const ContactForm = () => {
           <Input.TextArea size="large" rows={7} placeholder="Message *" />
         </Form.Item>
         <Form.Item>
-          <Button
-            type="primary"
-            shape="round"
-            size="large"
-            htmlType="submit"
-            className={style.sendBtn}
-          >
-            SEND
-          </Button>
+          <div className={style.sendBtnContainer}>
+            <Button
+              type="primary"
+              shape="round"
+              size="large"
+              htmlType="submit"
+              className={style.sendBtn}
+            >
+              SEND
+            </Button>
+          </div>
         </Form.Item>
       </Form>
     </>

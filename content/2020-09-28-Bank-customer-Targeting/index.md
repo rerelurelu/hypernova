@@ -4,6 +4,7 @@ path: blog/cgiar-bank-customer-targeting
 tags: [python]
 date: 2020-12-17
 cover: ./cover.jpg
+emoji: "🔥"
 excerpt: SIGNATEで開催された銀行の顧客ターゲティングコンペの参加記録日記。
 ---
 
