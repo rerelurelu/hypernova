@@ -3,7 +3,7 @@ title: "改良版アプリをリリースするためにやったこと"
 path: blog/uni-tool-v2
 tags: [flutter]
 date: 2021-09-06
-emoji: "🧰"
+emoji: "✨"
 excerpt: 前作のアプリと比較して「ゆにつーる」はどこが進化しているのかという話
 ---
 
