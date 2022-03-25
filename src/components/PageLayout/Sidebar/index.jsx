@@ -30,7 +30,7 @@ const DomContent = () => (
         </h2>
       </div>
       <div className={`${style.badge} ${style.badgeGray} ${style.defaultCursor}`}>
-        Software developer
+        Software Developer
       </div>
       <div className="centerAlign box">
         <Link to={github} title="GitHub" target="_blank" rel="noopener noreferrer">
