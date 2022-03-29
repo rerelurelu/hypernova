@@ -21,7 +21,12 @@ export default class HTML extends React.Component {
         </head>
         <body {...this.props.bodyAttributes} className="light">
           {this.props.preBodyComponents}
-          <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
+          <div
+            key="body"
+            id="___gatsby"
+            style={{ height: `100vh`, height: `100dvh` }}
+            dangerouslySetInnerHTML={{ __html: this.props.body }}
+          />
           {this.props.postBodyComponents}
         </body>
       </html>
