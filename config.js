@@ -1,3 +1,5 @@
+const tagColor = '#f7f8f0';
+
 module.exports = {
   pathPrefix: '',
   siteUrl: 'https://www.zaw.icu',
@@ -21,23 +23,27 @@ module.exports = {
   tags: {
     html: {
       name: 'HTML',
-      color: '#f7f8f0',
+      color: tagColor,
     },
     css: {
       name: 'CSS',
-      color: '#f7f8f0',
+      color: tagColor,
     },
     python: {
       name: 'Python',
-      color: '#f7f8f0',
+      color: tagColor,
     },
     django: {
       name: 'Django',
-      color: '#f7f8f0',
+      color: tagColor,
     },
     flutter: {
       name: 'Flutter',
-      color: '#f7f8f0',
+      color: tagColor,
+    },
+    poem: {
+      name: 'Poem',
+      color: tagColor,
     },
   },
 };
