@@ -1,6 +1,6 @@
 ---
 title: "最近のzoniha"
-path: blog/20220509poem
+path: blog/20220717poem
 tags: [poem]
 date: 2022-07-17
 emoji: "🔥"
